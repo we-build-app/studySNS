@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.setting.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_settingNickname"
+            app:destination="@id/settingNickname" />
+        <action
+            android:id="@+id/action_settingsFragment_to_settingRule"
+            app:destination="@id/settingRule" />
+        <action
+            android:id="@+id/action_settingsFragment_to_settingAlarm"
+            app:destination="@id/settingAlarm" />
+        <action
+            android:id="@+id/action_settingsFragment_to_settingPassword"
+            app:destination="@id/settingPassword" />
+        <action
+            android:id="@+id/action_settingsFragment_to_settingEmail"
+            app:destination="@id/settingEmail" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingNickname"
+        android:name="com.example.setting.SettingNickname"
+        android:label="fragment_setting_nickname"
+        tools:layout="@layout/fragment_setting_nickname" />
+    <fragment
+        android:id="@+id/settingRule"
+        android:name="com.example.setting.SettingRule"
+        android:label="fragment_setting_rule"
+        tools:layout="@layout/fragment_setting_rule" />
+    <fragment
+        android:id="@+id/settingAlarm"
+        android:name="com.example.setting.SettingAlarm"
+        android:label="fragment_setting_alarm"
+        tools:layout="@layout/fragment_setting_alarm" />
+    <fragment
+        android:id="@+id/settingPassword"
+        android:name="com.example.setting.SettingPassword"
+        android:label="fragment_setting_password"
+        tools:layout="@layout/fragment_setting_password" />
+    <fragment
+        android:id="@+id/settingEmail"
+        android:name="com.example.setting.SettingEmail"
+        android:label="fragment_setting_email"
+        tools:layout="@layout/fragment_setting_email" />
+    <fragment
+        android:id="@+id/settingProfileZone"
+        android:name="com.example.setting.SettingProfileZone"
+        android:label="fragment_setting_profile_zone"
+        tools:layout="@layout/fragment_setting_profile_zone" />
+</navigation>
