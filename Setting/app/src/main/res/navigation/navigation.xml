@@ -3,8 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/settingsFragment">
+    app:startDestination="@id/homeFragment">
 
+    <!-- Home !-->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <!-- Login !-->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.login.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_loginAccountCreate"
+            app:destination="@id/loginAccountCreate" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginIDFind"
+            app:destination="@id/loginIDFind" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginPWFind"
+            app:destination="@id/loginPWFind" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginAccountCreate"
+        android:name="com.example.login.LoginAccountCreateFragment"
+        android:label="fragment_login_account_create"
+        tools:layout="@layout/fragment_login_account_create"/>
+    <fragment
+        android:id="@+id/loginIDFind"
+        android:name="com.example.login.LoginIDFindFragment"
+        android:label="fragment_login_id_find"
+        tools:layout="@layout/fragment_login_id_find"/>
+    <fragment
+        android:id="@+id/loginPWFind"
+        android:name="com.example.login.LoginPWFindFragment"
+        android:label="fragment_login_pw_find"
+        tools:layout="@layout/fragment_login_pw_find"/>
+
+    <!-- Setting !-->
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.setting.SettingsFragment"
@@ -55,4 +100,5 @@
         android:name="com.example.setting.SettingProfileZone"
         android:label="fragment_setting_profile_zone"
         tools:layout="@layout/fragment_setting_profile_zone" />
+    <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/>
 </navigation>

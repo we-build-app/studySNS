@@ -8,7 +8,6 @@ import androidx.annotation.Nullable;
 import androidx.navigation.Navigation;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.PreferenceScreen;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
 
@@ -18,7 +17,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        setPreferencesFromResource(R.xml.root_preferences, rootKey);
+        setPreferencesFromResource(R.xml.fragment_setting_home, rootKey);
 
 
     }
