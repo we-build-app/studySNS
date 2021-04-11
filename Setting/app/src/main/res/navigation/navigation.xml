@@ -8,8 +8,10 @@
     <!-- Home !-->
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.HomeFragment"
-        android:label="HomeFragment">
+        android:name="com.example.domain.view.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -21,7 +23,7 @@
     <!-- Login !-->
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.login.LoginFragment"
+        android:name="com.example.domain.view.home.login.LoginFragment"
         android:label="LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_loginAccountCreate"
@@ -35,25 +37,26 @@
     </fragment>
     <fragment
         android:id="@+id/loginAccountCreate"
-        android:name="com.example.login.LoginAccountCreateFragment"
+        android:name="com.example.domain.view.home.login.LoginAccountCreateFragment"
         android:label="fragment_login_account_create"
         tools:layout="@layout/fragment_login_account_create"/>
     <fragment
         android:id="@+id/loginIDFind"
-        android:name="com.example.login.LoginIDFindFragment"
+        android:name="com.example.domain.view.home.login.LoginIDFindFragment"
         android:label="fragment_login_id_find"
         tools:layout="@layout/fragment_login_id_find"/>
     <fragment
         android:id="@+id/loginPWFind"
-        android:name="com.example.login.LoginPWFindFragment"
+        android:name="com.example.domain.view.home.login.LoginPWFindFragment"
         android:label="fragment_login_pw_find"
         tools:layout="@layout/fragment_login_pw_find"/>
 
     <!-- Setting !-->
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.setting.SettingsFragment"
-        android:label="SettingsFragment" >
+        android:name="com.example.domain.view.home.setting.SettingsFragment"
+        android:label="SettingsFragment"
+        >
         <action
             android:id="@+id/action_settingsFragment_to_settingNickname"
             app:destination="@id/settingNickname" />
@@ -72,32 +75,32 @@
     </fragment>
     <fragment
         android:id="@+id/settingNickname"
-        android:name="com.example.setting.SettingNickname"
+        android:name="com.example.domain.view.home.setting.SettingNickname"
         android:label="fragment_setting_nickname"
         tools:layout="@layout/fragment_setting_nickname" />
     <fragment
         android:id="@+id/settingRule"
-        android:name="com.example.setting.SettingRule"
+        android:name="com.example.domain.view.home.setting.SettingRule"
         android:label="fragment_setting_rule"
         tools:layout="@layout/fragment_setting_rule" />
     <fragment
         android:id="@+id/settingAlarm"
-        android:name="com.example.setting.SettingAlarm"
+        android:name="com.example.domain.view.home.setting.SettingAlarm"
         android:label="fragment_setting_alarm"
         tools:layout="@layout/fragment_setting_alarm" />
     <fragment
         android:id="@+id/settingPassword"
-        android:name="com.example.setting.SettingPassword"
+        android:name="com.example.domain.view.home.setting.SettingPassword"
         android:label="fragment_setting_password"
         tools:layout="@layout/fragment_setting_password" />
     <fragment
         android:id="@+id/settingEmail"
-        android:name="com.example.setting.SettingEmail"
+        android:name="com.example.domain.view.home.setting.SettingEmail"
         android:label="fragment_setting_email"
         tools:layout="@layout/fragment_setting_email" />
     <fragment
         android:id="@+id/settingProfileZone"
-        android:name="com.example.setting.SettingProfileZone"
+        android:name="com.example.domain.view.home.setting.SettingProfileZone"
         android:label="fragment_setting_profile_zone"
         tools:layout="@layout/fragment_setting_profile_zone" />
     <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/>

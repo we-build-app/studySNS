@@ -1,4 +1,4 @@
-package com.example.setting;
+package com.example.domain.view.home.setting;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.setting", appContext.getPackageName());
+        assertEquals("com.example.domain.view.home.setting", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.example.setting;
+package com.example.domain.view.home.setting;
 
 import org.junit.Test;
 

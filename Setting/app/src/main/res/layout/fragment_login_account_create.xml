@@ -67,11 +67,11 @@
         android:layout_width="100dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="Veriy"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/editPhone"
         app:layout_constraintStart_toEndOf="@+id/editPhone"
-        app:layout_constraintTop_toBottomOf="@+id/editUniv"
+        app:layout_constraintTop_toTopOf="@+id/editPhone"
         app:strokeColor="#FFFFFF" />
 
     <EditText

@@ -1,4 +1,4 @@
-package com.example.setting;
+package com.example.domain.view.home.setting;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,26 +9,61 @@ import androidx.navigation.Navigation;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
+import java.util.Vector;
+
 public class SettingsFragment extends PreferenceFragmentCompat {
 
     private Preference password, email, nickname, profile_image, rules, dark_mode, alarm_setting, app_version,
             FAQ, notice, user_agreement, personal_information_handling_policy, licence, information_using_agreement, withdrawal, logout;
 
+//    private static final int NULL_DESTINATION_ID = -1;
+//    private enum EPreference {
+//        ePassword("password", R.id.action_settingsFragment_to_settingPassword),
+//        eEmail("email", R.id.action_settingsFragment_to_settingEmail),
+//        eNickName("nickname", R.id.action_settingsFragment_to_settingNickname),
+//        ;
+//
+//        private String key;
+//        private int destinationId;
+//
+//        // @Getter
+//        // @ Setter
+//        private EPreference(String key, int destinationId){ // lombok
+//            this.key=key;
+//            this.destinationId=destinationId;
+//        }
+//        public String getKey() { return key; }
+//        public void setKey(String key) { this.key = key; }
+//        public int getDestinationId() { return destinationId; }
+//        public void setDestinationId(int destinationId) { this.destinationId = destinationId; }
+//    }
+
+//    private Vector<Preference> preferenceVector;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.fragment_setting_home, rootKey);
-
-
     }
-
-//    on
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        this.password = (Preference) findPreference("password");
+//        this.preferenceVector = new Vector<>();
+//
+//        for(EPreference ePreference : EPreference.values()){
+//            Preference preference = this.findPreference(ePreference.getKey());
+//            if(ePreference.getDestinationId() != NULL_DESTINATION_ID){
+//                preference.setOnPreferenceClickListener(clickedPreference -> {
+//                    this.navigateTo(ePreference.getDestinationId());
+//                    return true;
+//                });
+//            }
+//            this.preferenceVector.add(preference);
+//        }
+
+
+        this.password = findPreference("password");
         this.email = (Preference) findPreference("email");
         this.nickname = (Preference) findPreference("nickname");
         this.profile_image = (Preference) findPreference("profile_image");
@@ -45,13 +80,9 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         this.withdrawal = (Preference) findPreference("withdrawal");
         this.logout = (Preference) findPreference("logout");
 
-
-        this.password.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                Navigation.findNavController(view).navigate(R.id.action_settingsFragment_to_settingPassword);
-                return true;
-            }
+        this.password.setOnPreferenceClickListener(preference -> {
+            this.navigateTo(R.id.action_settingsFragment_to_settingPassword);
+            return true;
         });
         this.email.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
@@ -76,11 +107,5 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         });
     }
 
-    //    @Override
-//    public boolean onPreferenceTreeClick(androidx.preference.Preference preference) {
-//        if(preference.getKey().equals("nickname")){
-////            setPreferencesFromResource(R.layout.fragment_setting_nickname, rootKey);
-//        }
-//        return super.onPreferenceTreeClick(preference);
-//    }
+    private void navigateTo(int destinationId) { Navigation.findNavController(this.getView()).navigate(destinationId); }
 }

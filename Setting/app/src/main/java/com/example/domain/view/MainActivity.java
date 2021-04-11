@@ -1,11 +1,10 @@
-package com.example.setting;
+package com.example.domain.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.login.LoginFragment;
+import com.example.domain.view.home.setting.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +12,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 }

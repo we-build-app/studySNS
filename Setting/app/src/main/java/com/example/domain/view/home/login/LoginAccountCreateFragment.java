@@ -1,4 +1,4 @@
-package com.example.login;
+package com.example.domain.view.home.login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import com.example.setting.R;
+import com.example.domain.view.home.setting.R;
 
 public class LoginAccountCreateFragment extends Fragment {
 
@@ -17,11 +17,8 @@ public class LoginAccountCreateFragment extends Fragment {
         // View
         private Button signInButton;
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_login_account_create, container, false);
     }
 
