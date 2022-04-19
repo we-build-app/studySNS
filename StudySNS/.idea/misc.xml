@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_account_create.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_home.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_id_find.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_pw_find.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_email.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_nickname.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_password.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_profile_zone.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_rule.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>
