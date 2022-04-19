@@ -27,7 +27,7 @@ public class LoginIDFindFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // Associate View
-        this.idFindButton = view.findViewById(R.id.idFindButton);
+        this.idFindButton = view.findViewById(R.id.FIndID_FindButton);
 
         // Set View Callback
         this.idFindButton.setOnClickListener(v-> Navigation.findNavController(view).navigate(R.id.action_global_homeFragment));
