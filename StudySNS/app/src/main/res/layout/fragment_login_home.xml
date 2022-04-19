@@ -17,12 +17,12 @@
         app:layout_constraintVertical_bias="0.211"
         app:srcCompat="@drawable/a1" />
 
-    <TextView
+    <EditText
         android:id="@+id/login_idTextView"
         android:layout_width="210dp"
         android:layout_height="50dp"
-        android:text="id"
         android:gravity="center_vertical"
+        android:hint="id"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -30,11 +30,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.603" />
 
-    <TextView
+    <EditText
         android:id="@+id/login_pwTextView"
         android:layout_width="210dp"
         android:layout_height="50dp"
-        android:text="password"
+        android:hint="password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.606"
@@ -154,10 +154,12 @@
         android:id="@+id/imageView3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/login_loginButton"
+        app:layout_constraintVertical_bias="0.73"
         app:srcCompat="@drawable/instagram" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
