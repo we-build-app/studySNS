@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_homeFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_home_Communtiy"
+            app:destination="@id/home_Communtiy" />
     </fragment>
 
     <!-- Login !-->
@@ -104,4 +107,34 @@
         android:label="fragment_setting_profile_zone"
         tools:layout="@layout/fragment_setting_profile_zone" />
     <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/>
+    <fragment
+        android:id="@+id/home_Communtiy"
+        android:name="com.example.domain.view.home.setting.HomeCommuntiy"
+        android:label="fragment_home__communtiy"
+        tools:layout="@layout/fragment_home_communtiy" >
+        <action
+            android:id="@+id/action_home_Communtiy_to_homeCommnutiyAllBoard"
+            app:destination="@id/homeCommnutiyAllBoard" />
+        <action
+            android:id="@+id/action_home_Communtiy_to_homeCommuntiyPopularBoard"
+            app:destination="@id/homeCommuntiyPopularBoard" />
+        <action
+            android:id="@+id/action_home_Communtiy_to_homeCommunityStudyOpenings"
+            app:destination="@id/homeCommunityStudyOpenings" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeCommnutiyAllBoard"
+        android:name="com.example.domain.view.home.setting.HomeCommnutiyAllBoard"
+        android:label="fragment_home_commnutiy_all_board"
+        tools:layout="@layout/fragment_home_commnutiy_all_board" />
+    <fragment
+        android:id="@+id/homeCommuntiyPopularBoard"
+        android:name="com.example.domain.view.home.setting.HomeCommuntiyPopularBoard"
+        android:label="fragment_home_communtiy_popular_board"
+        tools:layout="@layout/fragment_home_communtiy_popular_board" />
+    <fragment
+        android:id="@+id/homeCommunityStudyOpenings"
+        android:name="com.example.domain.view.home.setting.HomeCommunityStudyOpenings"
+        android:label="fragment_home_community_study_openings"
+        tools:layout="@layout/fragment_home_community_study_openings" />
 </navigation>
