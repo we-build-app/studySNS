@@ -1,8 +1,13 @@
 package com.example.domain.view.home.main;
 
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,57 +15,42 @@ import android.view.ViewGroup;
 
 import com.example.domain.view.home.setting.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeCommuntiyPopularBoard#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
 public class HomeCommuntiyPopularBoard extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public HomeCommuntiyPopularBoard() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeCommuntiyPopularBoard.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static HomeCommuntiyPopularBoard newInstance(String param1, String param2) {
-        HomeCommuntiyPopularBoard fragment = new HomeCommuntiyPopularBoard();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
+    private ArrayList<HomeCommunityPopularBoardRecycleritem> list = new ArrayList<HomeCommunityPopularBoardRecycleritem>();
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        RecyclerView popularBoardRecycler = view.findViewById(R.id.PopularBoard_Recycler);
+        HomeCommunityPopularBoardRecyclerAdapter HPBrecycleritemAdapter = new HomeCommunityPopularBoardRecyclerAdapter(this.list);
+        popularBoardRecycler.setAdapter(HPBrecycleritemAdapter);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        popularBoardRecycler.setLayoutManager(linearLayoutManager);
+
+        Uri sampleURI = Uri.parse("https://www.google.com/search?q=%EC%BA%90%EB%A6%AD%ED%84%B0&sxsrf=APq-WBsQpwGE-3uB3IXYRLTnhUQMC_Hpxw:1650946268575&source=lnms&tbm=isch&sa=X&sqi=2&ved=2ahUKEwjeq4aP7rD3AhVMgpUCHW2LATkQ_AUoAXoECAIQAw&biw=1920&bih=929&dpr=1#imgrc=D5ifACO2Yw3RIM");
+        addRecyclerItem(sampleURI, "홍길동", "04/26", "수터디", "안녕하세요 만나서 반갑습니다", "40", "10");
+        HPBrecycleritemAdapter.notifyDataSetChanged();
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_communtiy_popular_board, container, false);
+        View view = inflater.inflate(R.layout.fragment_home_communtiy_popular_board, container, false);
+        return view;
+    }
+
+    private void addRecyclerItem(Uri profile, String username, String date, String title, String Description, String likenum, String replynum){
+        HomeCommunityPopularBoardRecycleritem HCPRecycler = new HomeCommunityPopularBoardRecycleritem();
+        HCPRecycler.setPopluarBoard_profile(profile);
+        HCPRecycler.setPopluarBoard_username(username);
+        HCPRecycler.setPopluarBoard_date(date);
+        HCPRecycler.setPopluarBoard_Article_title(title);
+        HCPRecycler.setPopluarBoard_Article_description(Description);
+        HCPRecycler.setPopluarBoard_Article_likenum(likenum);
+        HCPRecycler.setPopluarBoard_Article_replynum(replynum);
+        list.add(HCPRecycler);
     }
 }
