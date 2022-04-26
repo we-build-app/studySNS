@@ -2,15 +2,19 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/homeBTN"
         android:icon="@drawable/ic_outline_home_24"
         android:title="home" />
     <item
+        android:id="@+id/communityBTN"
         android:icon="@drawable/ic_outline_people_alt_24"
         android:title="community" />
     <item
+        android:id="@+id/plannerBTN"
         android:icon="@drawable/ic_outline_calendar_month_24"
         android:title="planner" />
     <item
+        android:id="@+id/settingBTN"
         android:icon="@drawable/ic_outline_settings_24"
         android:title="setting" />
 </menu>
