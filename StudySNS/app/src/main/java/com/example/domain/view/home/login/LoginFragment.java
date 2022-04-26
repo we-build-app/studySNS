@@ -10,7 +10,6 @@ import com.example.domain.view.home.main.MainActivity;
 import com.example.domain.view.home.setting.R;
 
 public class LoginFragment extends AbstractFragment {
-
     // Associate
         // View
         private Button login_loginButton;
@@ -38,8 +37,8 @@ public class LoginFragment extends AbstractFragment {
                 getActivity().finish();
             }
         });
-        this.login_idFindButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginIDFind));
-        this.login_pwFindButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginPWFind));
-        this.login_accountCreateButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginAccountCreate));
+        this.login_idFindButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginIDFind2));
+//        this.login_pwFindButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginPWFind));
+//        this.login_accountCreateButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginAccountCreate));
     }
 }

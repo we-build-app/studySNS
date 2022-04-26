@@ -23,37 +23,6 @@
             app:destination="@id/home_Communtiy" />
     </fragment>
 
-    <!-- Login !-->
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.domain.view.home.login.LoginFragment"
-        android:label="LoginFragment">
-        <action
-            android:id="@+id/action_loginFragment_to_loginAccountCreate"
-            app:destination="@id/loginAccountCreate" />
-        <action
-            android:id="@+id/action_loginFragment_to_loginIDFind"
-            app:destination="@id/loginIDFind" />
-        <action
-            android:id="@+id/action_loginFragment_to_loginPWFind"
-            app:destination="@id/loginPWFind" />
-    </fragment>
-    <fragment
-        android:id="@+id/loginAccountCreate"
-        android:name="com.example.domain.view.home.login.LoginAccountCreateFragment"
-        android:label="fragment_login_account_create"
-        tools:layout="@layout/fragment_login_account_create"/>
-    <fragment
-        android:id="@+id/loginIDFind"
-        android:name="com.example.domain.view.home.login.LoginIDFindFragment"
-        android:label="fragment_login_id_find"
-        tools:layout="@layout/fragment_login_id_find"/>
-    <fragment
-        android:id="@+id/loginPWFind"
-        android:name="com.example.domain.view.home.login.LoginPWFindFragment"
-        android:label="fragment_login_pw_find"
-        tools:layout="@layout/fragment_login_pw_find"/>
-
     <!-- Setting !-->
     <fragment
         android:id="@+id/settingsFragment"

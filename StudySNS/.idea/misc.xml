@@ -7,7 +7,7 @@
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/drawable/round_corner.xml" value="0.346" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/drawable/round_corner2.xml" value="0.346" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/activity_intro.xml" value="0.33" />
-        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/activity_login.xml" value="0.3619791666666667" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home__communtiy.xml" value="0.25" />
@@ -15,6 +15,7 @@
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home_community_study_openings.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home_communtiy.xml" value="0.33" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home_communtiy_popular_board.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login.xml" value="0.14221014492753623" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_account_create.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_home.xml" value="0.33" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_id_find.xml" value="0.358695652173913" />
@@ -29,6 +30,8 @@
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/recycleritem_popularboard.xml" value="0.3619791666666667" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/recycleritem_study.xml" value="0.3619791666666667" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/recycleritem_studyopenings.xml" value="0.5" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3463541666666667" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/menu/menu_option.xml" value="0.23802083333333332" />
       </map>
     </option>
   </component>
