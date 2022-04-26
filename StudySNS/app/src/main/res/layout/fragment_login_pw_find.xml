@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/FindID_Title"
+        android:id="@+id/FindPW_Title"
         android:layout_width="133dp"
         android:layout_height="30dp"
         android:gravity="center_horizontal"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.134" />
 
     <TextView
-        android:id="@+id/FindID_PasswordText"
+        android:id="@+id/FindPW_IDText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -53,21 +53,21 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/FindID_RegisterText"
+        android:id="@+id/FindPW_RegisterText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="28dp"
         android:text="회원가입"
         android:textColor="@color/main_skyblue"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FindID_PasswordText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/FindPW_IDText"
+        app:layout_constraintVertical_bias="0.18" />
 
     <EditText
-        android:id="@+id/FindID_Name"
+        android:id="@+id/FindPW_Name"
         android:layout_width="350dp"
         android:layout_height="42dp"
         android:hint="이름을 입력해주세요"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/FindID_Password"
+        android:id="@+id/FindPW_Password"
         android:layout_width="350dp"
         android:layout_height="42dp"
         android:hint="아이디를 입력 해주세요"
@@ -129,7 +129,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FindID_Title"
+        app:layout_constraintTop_toBottomOf="@+id/FindPW_Title"
         app:layout_constraintVertical_bias="0.079" />
 
     <TextView
@@ -143,7 +143,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FindID_Name"
+        app:layout_constraintTop_toBottomOf="@+id/FindPW_Name"
         app:layout_constraintVertical_bias="0.057" />
 
     <TextView
@@ -155,9 +155,9 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FindID_Password"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintTop_toBottomOf="@+id/FindPW_Password"
+        app:layout_constraintVertical_bias="0.063" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
