@@ -63,16 +63,16 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.homeBTN:
-                        Navigation.findNavController(main_fragment).navigate(R.id.action_homeFragment_to_loginFragment);
+                        Navigation.findNavController(main_fragment).navigate(R.id.homeFragment);
                         break;
                     case R.id.communityBTN:
-//                        Navigation.findNavController(main_fragment).navigate(R.id.action_homeFragment_to_settingsFragment);
+                        Navigation.findNavController(main_fragment).navigate(R.id.home_Communtiy);
                         break;
                     case R.id.plannerBTN:
 //                        Navigation.findNavController(main_fragment).navigate(R.id.action_homeFragment_to_loginFragment);
                         break;
                     case R.id.settingBTN:
-                        Navigation.findNavController(main_fragment).navigate(R.id.action_homeFragment_to_settingsFragment);
+                        Navigation.findNavController(main_fragment).navigate(R.id.settingsFragment);
                         break;
                 }
                 return false;
