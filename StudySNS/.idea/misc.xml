@@ -17,8 +17,11 @@
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_rule.xml" value="0.358695652173913" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25177304964539005" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25177304964539005" />
+        <entry key="app/src/main/res/layout/fragment_login_account_create.xml" value="0.25177304964539005" />
+        <entry key="app/src/main/res/layout/fragment_login_home.xml" value="0.25177304964539005" />
         <entry key="app/src/main/res/layout/switch_item.xml" value="0.25177304964539005" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3972222222222222" />
+        <entry key="app/src/main/res/menu/menu_option.xml" value="0.2947916666666667" />
       </map>
     </option>
   </component>
