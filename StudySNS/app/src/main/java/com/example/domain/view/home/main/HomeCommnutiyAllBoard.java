@@ -31,6 +31,8 @@ public class HomeCommnutiyAllBoard extends Fragment {
 
         Uri sampleURI = Uri.parse("https://www.google.com/search?q=%EC%BA%90%EB%A6%AD%ED%84%B0&sxsrf=APq-WBsQpwGE-3uB3IXYRLTnhUQMC_Hpxw:1650946268575&source=lnms&tbm=isch&sa=X&sqi=2&ved=2ahUKEwjeq4aP7rD3AhVMgpUCHW2LATkQ_AUoAXoECAIQAw&biw=1920&bih=929&dpr=1#imgrc=D5ifACO2Yw3RIM");
         addRecyclerItem(sampleURI, "최경수", "03/26", "인사글", "안녕하세요 만나서 반갑습니다", "30", "10");
+        addRecyclerItem(sampleURI, "최경수", "03/26", "인사글", "안녕하세요 만나서 반갑습니다", "30", "10");
+        addRecyclerItem(sampleURI, "최경수", "03/26", "인사글", "안녕하세요 만나서 반갑습니다", "30", "10");
         HCArecycleritemAdapter.notifyDataSetChanged();
     }
 
