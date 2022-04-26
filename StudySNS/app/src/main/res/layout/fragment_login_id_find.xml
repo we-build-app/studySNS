@@ -7,33 +7,16 @@
 
     <Button
         android:id="@+id/FIndID_FindButton"
-        android:layout_width="356dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/round_corner2"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="192dp"
+        android:backgroundTint="@color/main_skyblue"
         android:text="찾기"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FindID_Password"
-        app:layout_constraintVertical_bias="0.017" />
-
-    <TextView
-        android:id="@+id/FindID_Title"
-        android:layout_width="273dp"
-        android:layout_height="55dp"
-        android:gravity="center_horizontal"
-        android:text="아이디 찾기"
-        android:textColor="#738B5D"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <TextView
         android:id="@+id/FindID_PasswordText"
@@ -41,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="비밀번호 찾기"
-        android:textColor="#577041"
+        android:textColor="@color/main_skyblue"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="회원가입"
-        android:textColor="#577041"
+        android:textColor="@color/main_skyblue"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,45 +47,87 @@
         app:layout_constraintTop_toBottomOf="@+id/FindID_PasswordText"
         app:layout_constraintVertical_bias="0.015" />
 
-    <EditText
-        android:id="@+id/FindID_Name"
-        android:layout_width="325dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/round_corner"
-        android:hint=" 이름"
+    <TextView
+        android:id="@+id/login_findID_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 찾기"
         android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FindID_Title"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
     <EditText
-        android:id="@+id/FindID_Password"
-        android:layout_width="325dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/round_corner"
-        android:hint="이메일"
-        android:textColor="#000000"
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="이름을 입력해주세요"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FindID_Name"
+        app:layout_constraintTop_toBottomOf="@+id/FindID_NameTitle"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/FindID_cancel"
-        android:layout_width="32dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="12dp"
-        android:gravity="center_horizontal"
-        android:text="x"
-        android:textSize="40dp"
+        android:id="@+id/FindID_NameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_findID_title"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/FindID_EmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@를 포함해서 입력해주세요"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FindID_EmailTitle"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

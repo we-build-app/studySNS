@@ -38,7 +38,7 @@ public class LoginFragment extends AbstractFragment {
             }
         });
         this.login_idFindButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginIDFind2));
-//        this.login_pwFindButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginPWFind));
-//        this.login_accountCreateButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginAccountCreate));
+        this.login_pwFindButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginPWFind2));
+        this.login_accountCreateButton.setOnClickListener(v -> this.navigateTo(R.id.action_loginFragment_to_loginAccountCreate2));
     }
 }
