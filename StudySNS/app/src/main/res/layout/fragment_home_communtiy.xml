@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeCommuntiy" >
+    tools:context="com.example.domain.view.home.main.HomeCommuntiy" >
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/hometabs"
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/hometabs"
-        android:layout_marginTop="2dp">
+        android:layout_marginTop="3dp">
 
     </FrameLayout>
 

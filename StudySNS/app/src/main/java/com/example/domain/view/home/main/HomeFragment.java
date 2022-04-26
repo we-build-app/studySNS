@@ -1,4 +1,4 @@
-package com.example.domain.view.home;
+package com.example.domain.view.home.main;
 
 import android.view.View;
 import android.widget.Button;

@@ -1,4 +1,4 @@
-package com.example.domain.view;
+package com.example.domain.view.home.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 

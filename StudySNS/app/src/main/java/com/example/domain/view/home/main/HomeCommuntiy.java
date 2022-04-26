@@ -1,4 +1,4 @@
-package com.example.domain.view.home.setting;
+package com.example.domain.view.home.main;
 
 import android.os.Bundle;
 
@@ -7,8 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Switch;
 
+import com.example.domain.view.home.setting.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class HomeCommuntiy extends Fragment {
