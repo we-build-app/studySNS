@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/pwFindButton"
         android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_marginTop="36dp"
         android:backgroundTint="@color/main_skyblue"
         android:text="찾기"
@@ -32,7 +32,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.134" />
@@ -112,7 +112,7 @@
         android:backgroundTint="@color/main_skyblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.115"
