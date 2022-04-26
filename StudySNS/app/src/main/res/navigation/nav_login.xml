@@ -15,7 +15,11 @@
         android:id="@+id/loginIDFind"
         android:name="com.example.domain.view.home.login.LoginIDFindFragment"
         android:label="fragment_login_id_find"
-        tools:layout="@layout/fragment_login_id_find" />
+        tools:layout="@layout/fragment_login_id_find" >
+        <action
+            android:id="@+id/action_loginIDFind_to_loginIDFindResult"
+            app:destination="@id/loginIDFindResult" />
+    </fragment>
     <fragment
         android:id="@+id/loginAccountCreate"
         android:name="com.example.domain.view.home.login.LoginAccountCreateFragment"
@@ -35,5 +39,10 @@
             android:id="@+id/action_loginFragment_to_loginAccountCreate2"
             app:destination="@id/loginAccountCreate" />
     </fragment>
+    <fragment
+        android:id="@+id/loginIDFindResult"
+        android:name="com.example.domain.view.home.login.LoginIDFindResult"
+        android:label="fragment_login_i_d_find_result"
+        tools:layout="@layout/fragment_login_id_find_result" />
 
 </navigation>
