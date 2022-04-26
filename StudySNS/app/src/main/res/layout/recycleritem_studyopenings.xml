@@ -1,6 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:background="#FFFFFF">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Studyopening_profile"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="29"
+            android:src="@drawable/user"
+            app:civ_border_width="0dp"
+            app:civ_circle_background_color="#B3B5B5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.213"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/Studyopening_applybtn"
+            android:layout_width="120dp"
+            android:layout_height="43dp"
+            android:backgroundTint="#203864"
+            android:text="지원하기(0/5)"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.787"
+            app:layout_constraintStart_toEndOf="@+id/Studyopening_Dday"
+            app:layout_constraintTop_toBottomOf="@+id/Studyopening_articleTitle"
+            app:layout_constraintVertical_bias="0.47" />
+
+        <TextView
+            android:id="@+id/Studyopening_usernickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스터디장"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Studyopening_profile"
+            app:layout_constraintTop_toBottomOf="@+id/Studyopening_username"
+            app:layout_constraintVertical_bias="0.006" />
+
+        <TextView
+            android:id="@+id/Studyopening_check"
+            android:layout_width="69dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/round"
+            android:text="모집중"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Studyopening_usernickname"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.311" />
+
+        <TextView
+            android:id="@+id/Studyopening_Articletype"
+            android:layout_width="93dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_corner"
+            android:text="프로그래밍"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toEndOf="@+id/Studyopening_check"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.311" />
+
+        <View
+            android:id="@+id/Studyopening_line"
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#CDCDCD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Studyopening_usernickname"
+            app:layout_constraintVertical_bias="0.067" />
+
+        <TextView
+            android:id="@+id/Studyopening_articleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C#스터디 모집합니다"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Studyopening_line"
+            app:layout_constraintVertical_bias="0.113" />
+
+        <TextView
+            android:id="@+id/Studyopening_articletime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 ~ 13:00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.135"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Studyopening_articleTitle"
+            app:layout_constraintVertical_bias="0.173" />
+
+        <TextView
+            android:id="@+id/Studyopening_Dday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03/27"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Studyopening_Ddaytitle"
+            app:layout_constraintTop_toBottomOf="@+id/Studyopening_articletime"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/Studyopening_Ddaytitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마감일 : "
+            android:textColor="@color/main_skyblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Studyopening_articletime"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/Studyopening_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홍길동"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toEndOf="@+id/Studyopening_profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.204" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+</LinearLayout>
