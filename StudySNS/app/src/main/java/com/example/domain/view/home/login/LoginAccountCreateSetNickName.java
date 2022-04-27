@@ -1,5 +1,6 @@
 package com.example.domain.view.home.login;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +11,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -56,6 +58,9 @@ public class LoginAccountCreateSetNickName extends Fragment  {
 //                  //중복확인 체크 부분
 //                }
                 else{
+                    Toast.makeText(getContext(), "회원가입 완료.", Toast.LENGTH_SHORT).show();
+                    InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(NickName.getWindowToken(),0);
                     Navigation.findNavController(view).navigate(R.id.loginFragment);
                 }
             }

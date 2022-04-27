@@ -10,9 +10,12 @@
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginBottom="192dp"
+        android:background="@drawable/register_complete_round"
         android:backgroundTint="@color/main_skyblue"
         android:text="찾기"
-        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,11 +71,11 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.13"
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
 
     <EditText
         android:id="@+id/FindID_name"
@@ -81,6 +84,7 @@
         android:ems="10"
         android:hint="이름을 입력해주세요"
         android:inputType="textPersonName"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -123,6 +127,7 @@
         android:ems="10"
         android:hint="@를 포함해서 입력해주세요"
         android:inputType="textEmailAddress"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

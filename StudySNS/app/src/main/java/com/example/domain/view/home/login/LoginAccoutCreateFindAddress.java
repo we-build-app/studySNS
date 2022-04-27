@@ -19,6 +19,7 @@ import com.example.domain.view.home.setting.R;
 
 public class LoginAccoutCreateFindAddress extends Fragment implements View.OnClickListener {
 
+    private View FadeIn;
     private EditText Address;
     private Button GotoNickNameSet;
     private ImageView Goto_agree1, Goto_agree2, Goto_agree3;
@@ -31,6 +32,7 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login_accout_create_find_address, container, false);
 
+        this.FadeIn = view.findViewById(R.id.FadeInView);
         this.Address = view.findViewById(R.id.Address_inputAddress);
         this.GotoNickNameSet = view.findViewById(R.id.GotoNickNameSetting);
         this.All_agree = view.findViewById(R.id.Address_Allagree);
@@ -41,6 +43,7 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         this.Goto_agree2 = view.findViewById(R.id.Goto_agree2);
         this.Goto_agree3 = view.findViewById(R.id.Goto_agree3);
 
+        this.FadeIn.bringToFront();
         this.Address.setOnClickListener(this);
         this.GotoNickNameSet.setOnClickListener(this);
         this.All_agree.setOnClickListener(this);
@@ -59,6 +62,7 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         switch (view.getId()){
             // 주소 입력창 클릭시
             case R.id.Address_inputAddress:
+                TakeDataFromAddressAPI();
                 break;
             // 다음으로 버튼 클릭시
             case R.id.GotoNickNameSetting:
@@ -68,6 +72,15 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
             case R.id.Address_Allagree:
                 CheckOtherAgreement();
                 break;
+        }
+    }
+
+    private void TakeDataFromAddressAPI() {
+        int status = LoginAddressNetWorkStatus.getConnectivityStatus(getActivity().getApplicationContext());
+        if(status == LoginAddressNetWorkStatus.TYPE_MOBILE || status == LoginAddressNetWorkStatus.TYPE_WIFI){
+
+        } else{
+            Toast.makeText(getContext(), "인터넷 연결을 확인해주세요", Toast.LENGTH_SHORT).show();
         }
     }
 
