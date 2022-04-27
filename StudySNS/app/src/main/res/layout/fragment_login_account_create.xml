@@ -144,7 +144,7 @@
         app:layout_constraintVertical_bias="0.04000002" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/editDoublecheck"
         android:layout_width="97dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/main_skyblue"
@@ -184,7 +184,7 @@
         app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/editsixletterup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="· 6자 이상 입력"
@@ -197,7 +197,7 @@
         app:layout_constraintVertical_bias="0.01999998" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/editcombination"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="· 영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합"
@@ -206,7 +206,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/editsixletterup"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -219,7 +219,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/editcombination"
         app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView

@@ -50,7 +50,7 @@
         tools:layout="@layout/fragment_login_id_find_result" />
     <fragment
         android:id="@+id/loginPWFindResult"
-        android:name="com.example.domain.view.home.setting.LoginPWFindResult"
+        android:name="com.example.domain.view.home.login.LoginPWFindResult"
         android:label="fragment_login_p_w_find_result"
         tools:layout="@layout/fragment_login_pw_find_result" />
 
