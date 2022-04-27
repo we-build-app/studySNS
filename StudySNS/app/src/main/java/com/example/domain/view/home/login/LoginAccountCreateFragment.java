@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,11 +32,12 @@ public class LoginAccountCreateFragment extends Fragment {
     private Button signInButton;
     private EditText name, userID, password, Repassword, Email, college;
     private TextView Uptosix, passwordCombination, checkdouble;
-    private Boolean maxlength, passwordCondition, duplication;
+    private Boolean maxlength, passwordCondition, duplication, checkEmail;
     private String PWinput, PwCheckinput;
 
     // System
     private InputMethodManager inputMethodManager;
+    private Pattern pattern;
 
 
     @Override
@@ -48,7 +50,7 @@ public class LoginAccountCreateFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         this.inputMethodManager = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-
+        this.pattern = Patterns.EMAIL_ADDRESS;
         // Associate View
         this.signInButton = view.findViewById(R.id.signInButton);
         this.name = view.findViewById(R.id.editName);
@@ -64,6 +66,7 @@ public class LoginAccountCreateFragment extends Fragment {
         this.maxlength = false;
         this.passwordCondition = false;
         this.duplication = false;
+        this.checkEmail = false;
 
 
 
@@ -97,10 +100,28 @@ public class LoginAccountCreateFragment extends Fragment {
             public void afterTextChanged(Editable editable) {
             }
         });
+        this.Email.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) { }
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                checkEmailForm();
+            }
+            @Override
+            public void afterTextChanged(Editable editable) { }
+        });
         //회원가입시 공백이 있는지 체크
         verfiyBlankIntheRegisterSection();
         // Set View Callback
 
+    }
+
+    private void checkEmailForm() {
+        if(pattern.matcher(Email.getText().toString()).matches()){
+            this.checkEmail = true;
+        } else{
+            this.checkEmail = false;
+        }
     }
 
     private void checkPasswordwithOriginPassword() {
@@ -113,13 +134,16 @@ public class LoginAccountCreateFragment extends Fragment {
             } else if(this.PwCheckinput.equals("")){
                 this.checkdouble.setText("비밀번호를 입력해주세요.");
                 this.checkdouble.setTextColor(0xAA000000);
+                this.duplication = false;
             } else {
                 this.checkdouble.setText("비밀번호가 일치하지않습니다.");
                 this.checkdouble.setTextColor(0xAAFF0000);
+                this.duplication = false;
             }
         } else {
             this.checkdouble.setText("비밀번호를 입력해주세요.");
             this.checkdouble.setTextColor(0xAA000000);
+            this.duplication = false;
         }
 
     }
@@ -145,18 +169,17 @@ public class LoginAccountCreateFragment extends Fragment {
                 this.passwordCondition = true;
             } else {
                 this.passwordCombination.setTextColor(0xAA000000);
+                this.passwordCondition = false;
             }
 
         } else if (this.PWinput.length() < 6) {
             this.Uptosix.setTextColor(0xAA000000);
+            this.maxlength = false;
         }
     }
 
 
     private void verfiyBlankIntheRegisterSection() {
-        this.maxlength = false;
-        this.passwordCondition = false;
-        this.duplication = false;
         this.signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -180,7 +203,10 @@ public class LoginAccountCreateFragment extends Fragment {
                     Toast.makeText(getContext(), "이메일을 입력해주세요.", Toast.LENGTH_SHORT).show();
                     Email.requestFocus();
                     inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
-
+                } else if(!pattern.matcher(Email.getText().toString()).matches()){
+                    Toast.makeText(getContext(), "이메일 형식이 아닙니다.", Toast.LENGTH_SHORT).show();
+                    Email.requestFocus();
+                    inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
                 } else if (college.getText().toString().equals("")) {
                     Toast.makeText(getContext(), "대학교를 입력해주세요.", Toast.LENGTH_SHORT).show();
                     college.requestFocus();
@@ -189,9 +215,12 @@ public class LoginAccountCreateFragment extends Fragment {
                     System.out.println("길이 조건" + maxlength);
                     System.out.println("조합 조건" + passwordCondition);
                     System.out.println("재입력 조건" + duplication);
-                    if(maxlength && passwordCondition && duplication){
-                        signInButton.setOnClickListener(v-> Navigation.findNavController(view).navigate(R.id.action_loginAccountCreate_to_loginAccoutCreateFindAddress));
-                    }
+                    System.out.println("이메일 조건" + checkEmail);
+                }
+                if(maxlength && passwordCondition && duplication && checkEmail){
+                    Navigation.findNavController(view).navigate(R.id.action_loginAccountCreate_to_loginAccoutCreateFindAddress);
+                } else {
+                    Toast.makeText(getContext(), "조건을 완성해주세요.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
