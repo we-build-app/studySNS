@@ -27,14 +27,15 @@ import java.util.regex.Pattern;
 
 public class LoginAccountCreateFragment extends Fragment {
     // Associate
-        // View
-        private Button signInButton;
-        private EditText name, userID, password, Repassword, Email, college;
-        private TextView Uptosix, passwordCombination;
-        private Boolean Blank, maxlength, passwordCondition;
+    // View
+    private Button signInButton;
+    private EditText name, userID, password, Repassword, Email, college;
+    private TextView Uptosix, passwordCombination, checkdouble;
+    private Boolean maxlength, passwordCondition, duplication;
+    private String PWinput, PwCheckinput;
 
-        // System
-        private InputMethodManager inputMethodManager;
+    // System
+    private InputMethodManager inputMethodManager;
 
 
     @Override
@@ -58,90 +59,139 @@ public class LoginAccountCreateFragment extends Fragment {
         this.college = view.findViewById(R.id.editUniv);
         this.Uptosix = view.findViewById(R.id.editsixletterup);
         this.passwordCombination = view.findViewById(R.id.editcombination);
+        this.checkdouble = view.findViewById(R.id.editcheckPWdouble);
 
-        this.Blank = false;
         this.maxlength = false;
         this.passwordCondition = false;
+        this.duplication = false;
 
-        //회원가입시 공백이 있는지 체크
-        verfiyBlankIntheRegisterSection();
+
 
         this.password.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) { }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 //회원가입시 비밀번호가 조건에 충족하는지 체크
                 verfiyPasswordConditionIntheRegisterSection();
             }
+
             @Override
-            public void afterTextChanged(Editable editable) { }
+            public void afterTextChanged(Editable editable) {
+            }
         });
+        this.Repassword.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
 
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                //회원가입시 비밀번호와 재확인 비밀번호가 맞는지 체크
+                checkPasswordwithOriginPassword();
+            }
 
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
+        });
+        //회원가입시 공백이 있는지 체크
+        verfiyBlankIntheRegisterSection();
         // Set View Callback
-//        this.signInButton.setOnClickListener(v-> Navigation.findNavController(view).navigate(R.id.action_global_homeFragment));
+
+    }
+
+    private void checkPasswordwithOriginPassword() {
+        this.PwCheckinput = this.Repassword.getText().toString();
+        if (this.PWinput != null) {
+            if (this.PWinput.equals(this.PwCheckinput)) {
+                this.checkdouble.setText("비밀번호가 일치합니다.");
+                this.checkdouble.setTextColor(0xAA4FC9FF);
+                this.duplication = true;
+            } else if(this.PwCheckinput.equals("")){
+                this.checkdouble.setText("비밀번호를 입력해주세요.");
+                this.checkdouble.setTextColor(0xAA000000);
+            } else {
+                this.checkdouble.setText("비밀번호가 일치하지않습니다.");
+                this.checkdouble.setTextColor(0xAAFF0000);
+            }
+        } else {
+            this.checkdouble.setText("비밀번호를 입력해주세요.");
+            this.checkdouble.setTextColor(0xAA000000);
+        }
+
     }
 
     private void verfiyPasswordConditionIntheRegisterSection() {
-        String PWinput = this.password.toString();
+        this.PWinput = this.password.getText().toString();
         //6자리 이상 체크
-        if (password.getText().toString().length() >= 6) {
+        if (this.PWinput.length() >= 6) {
             this.Uptosix.setTextColor(0xAA4FC9FF);
             this.maxlength = true;
             //비밀번호 조합 체크
-            if(Pattern.matches("^.*(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$", PWinput)){
+            if (Pattern.matches("^.*(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$", this.PWinput)) {
                 this.passwordCombination.setTextColor(0xAA4FC9FF);
                 this.passwordCondition = true;
-            } else if(Pattern.matches("^.*(?=.*[a-zA-Z])(?=.*[0-9]).*$", PWinput)){
+            } else if (Pattern.matches("^.*(?=.*[a-zA-Z])(?=.*[0-9]).*$", this.PWinput)) {
                 this.passwordCombination.setTextColor(0xAA4FC9FF);
                 this.passwordCondition = true;
-            } else if(Pattern.matches("^.*(?=.*[0-9])(?=.*[!@#$%^&+=]).*$", PWinput)){
+            } else if (Pattern.matches("^.*(?=.*[0-9])(?=.*[!@#$%^&+=]).*$", this.PWinput)) {
                 this.passwordCombination.setTextColor(0xAA4FC9FF);
                 this.passwordCondition = true;
-            } else if(Pattern.matches("^.*(?=^.{8,20}$)(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$", PWinput)){
+            } else if (Pattern.matches("^.*(?=^.{8,20}$)(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$", this.PWinput)) {
                 this.passwordCombination.setTextColor(0xAA4FC9FF);
                 this.passwordCondition = true;
             } else {
                 this.passwordCombination.setTextColor(0xAA000000);
             }
 
-        } else if(password.getText().toString().length() < 6){
+        } else if (this.PWinput.length() < 6) {
             this.Uptosix.setTextColor(0xAA000000);
         }
     }
 
 
     private void verfiyBlankIntheRegisterSection() {
+        this.maxlength = false;
+        this.passwordCondition = false;
+        this.duplication = false;
         this.signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(name.getText().toString().equals("")){
-                    Toast.makeText(getContext(),"이름를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                if (name.getText().toString().equals("")) {
+                    Toast.makeText(getContext(), "이름를 입력해주세요.", Toast.LENGTH_SHORT).show();
                     name.requestFocus();
                     inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
-                }
-                else if(userID.getText().toString().equals("")){
-                    Toast.makeText(getContext(),"아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                } else if (userID.getText().toString().equals("")) {
+                    Toast.makeText(getContext(), "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
                     userID.requestFocus();
                     inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
-                } else if(password.getText().toString().equals("")){
-                    Toast.makeText(getContext(),"비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                } else if (password.getText().toString().equals("")) {
+                    Toast.makeText(getContext(), "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
                     password.requestFocus();
                     inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
-                } else if(userID.getText().toString().equals("")){
-                    Toast.makeText(getContext(),"아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                } else if (userID.getText().toString().equals("")) {
+                    Toast.makeText(getContext(), "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
                     userID.requestFocus();
                     inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
-                } else if(Email.getText().toString().equals("")){
-                    Toast.makeText(getContext(),"이메일을 입력해주세요.", Toast.LENGTH_SHORT).show();
+                } else if (Email.getText().toString().equals("")) {
+                    Toast.makeText(getContext(), "이메일을 입력해주세요.", Toast.LENGTH_SHORT).show();
                     Email.requestFocus();
                     inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
 
-                } else if(college.getText().toString().equals("")){
-                    Toast.makeText(getContext(),"대학교를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                } else if (college.getText().toString().equals("")) {
+                    Toast.makeText(getContext(), "대학교를 입력해주세요.", Toast.LENGTH_SHORT).show();
                     college.requestFocus();
                     inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
+                } else{
+                    System.out.println("길이 조건" + maxlength);
+                    System.out.println("조합 조건" + passwordCondition);
+                    System.out.println("재입력 조건" + duplication);
+                    if(maxlength && passwordCondition && duplication){
+                        signInButton.setOnClickListener(v-> Navigation.findNavController(view).navigate(R.id.action_loginAccountCreate_to_loginAccoutCreateFindAddress));
+                    }
                 }
             }
         });

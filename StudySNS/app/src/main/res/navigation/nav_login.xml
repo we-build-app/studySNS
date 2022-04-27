@@ -28,7 +28,11 @@
         android:id="@+id/loginAccountCreate"
         android:name="com.example.domain.view.home.login.LoginAccountCreateFragment"
         android:label="fragment_login_account_create"
-        tools:layout="@layout/fragment_login_account_create" />
+        tools:layout="@layout/fragment_login_account_create" >
+        <action
+            android:id="@+id/action_loginAccountCreate_to_loginAccoutCreateFindAddress"
+            app:destination="@id/loginAccoutCreateFindAddress" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.domain.view.home.login.LoginFragment"
@@ -53,5 +57,19 @@
         android:name="com.example.domain.view.home.login.LoginPWFindResult"
         android:label="fragment_login_p_w_find_result"
         tools:layout="@layout/fragment_login_pw_find_result" />
+    <fragment
+        android:id="@+id/loginAccoutCreateFindAddress"
+        android:name="com.example.domain.view.home.login.LoginAccoutCreateFindAddress"
+        android:label="fragment_login_accout_create_find_address"
+        tools:layout="@layout/fragment_login_accout_create_find_address" >
+        <action
+            android:id="@+id/action_loginAccoutCreateFindAddress_to_loginAccountCreateSetNickName"
+            app:destination="@id/loginAccountCreateSetNickName" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginAccountCreateSetNickName"
+        android:name="com.example.domain.view.home.login.LoginAccountCreateSetNickName"
+        android:label="fragment_login_account_create_set_nick_name"
+        tools:layout="@layout/fragment_login_account_create_set_nick_name" />
 
 </navigation>
