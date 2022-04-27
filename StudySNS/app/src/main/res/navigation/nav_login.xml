@@ -82,17 +82,17 @@
         tools:layout="@layout/fragment_login_account_create_set_nick_name" />
     <fragment
         android:id="@+id/loginAccountCreateAgree1"
-        android:name="com.example.domain.view.home.setting.LoginAccountCreateAgree1"
+        android:name="com.example.domain.view.home.login.LoginAccountCreateAgree1"
         android:label="fragment_login_account_create_agree1"
         tools:layout="@layout/fragment_login_account_create_agree1" />
     <fragment
         android:id="@+id/loginAccountCreateAgree2"
-        android:name="com.example.domain.view.home.setting.LoginAccountCreateAgree2"
+        android:name="com.example.domain.view.home.login.LoginAccountCreateAgree2"
         android:label="fragment_login_account_create_agree2"
         tools:layout="@layout/fragment_login_account_create_agree2" />
     <fragment
         android:id="@+id/loginAccountCreateAgree3"
-        android:name="com.example.domain.view.home.setting.LoginAccountCreateAgree3"
+        android:name="com.example.domain.view.home.login.LoginAccountCreateAgree3"
         android:label="fragment_login_account_create_agree3"
         tools:layout="@layout/fragment_login_account_create_agree3" />
 

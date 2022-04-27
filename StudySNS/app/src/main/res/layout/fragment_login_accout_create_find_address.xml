@@ -217,9 +217,11 @@
     <Button
         android:id="@+id/GotoNickNameSetting"
         android:layout_width="350dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:background="@color/main_skyblue"
         android:text="다음으로"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
