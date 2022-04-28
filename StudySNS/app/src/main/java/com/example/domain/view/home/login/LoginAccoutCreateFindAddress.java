@@ -1,18 +1,28 @@
 package com.example.domain.view.home.login;
 
+import android.annotation.TargetApi;
+import android.graphics.Bitmap;
+import android.net.http.SslError;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.JavascriptInterface;
+import android.webkit.PermissionRequest;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -31,15 +41,17 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
     private ImageView Goto_agree1, Goto_agree2, Goto_agree3;
     private CheckBox All_agree, Sub_agree1, Sub_agree2, Sub_agree3;
     private WebView addressAPI;
+    private String AddressResult;
 
     private ConstraintLayout FadeIN;
+    private View view;
     private Handler handler;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_login_accout_create_find_address, container, false);
+        this.view = inflater.inflate(R.layout.fragment_login_accout_create_find_address, container, false);
 
         this.Address = view.findViewById(R.id.Address_inputAddress);
         this.GotoNickNameSet = view.findViewById(R.id.GotoNickNameSetting);
@@ -53,8 +65,6 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         this.FadeIN = view.findViewById(R.id.fadein);
         this.addressAPI = view.findViewById(R.id.AddressAPI);
         this.handler = new Handler();
-
-        init_webView();
 
         this.Address.setFocusable(false);
         this.Address.setOnClickListener(this);
@@ -70,27 +80,64 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         return view;
     }
 
-    public void init_webView() {
-        this.addressAPI.getSettings().setJavaScriptEnabled(true);
-        this.addressAPI.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        this.addressAPI.addJavascriptInterface(new AndroidBridge(), "AddressAPI");
-        this.addressAPI.setWebChromeClient(new WebChromeClient());
-        this.addressAPI.loadUrl("file:///C:/Users/kyungsoo/public/index.html");
-    }
-
-    private class AndroidBridge {
-        @JavascriptInterface
-        public void setAddress(final String arg1, final String arg2, final String arg3){
-            handler.post(new Runnable() {
-                @Override
-                public void run() {
-                    Address.setText(String.format("%s %s", arg2, arg3));
-                    init_webView();
-                }
-            });
-        }
-
-    }
+//    public void init_webView() {
+//        this.addressAPI.getSettings().setJavaScriptEnabled(true);
+//        this.addressAPI.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+//        this.addressAPI.addJavascriptInterface(new AndroidBridge(), "AddressAPI");
+//        this.addressAPI.setWebViewClient(new WebViewClient() {
+//
+//            @Override
+//            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+//                // SSL 에러가 발생해도 계속 진행
+//                handler.proceed();
+//            }
+//
+//            @Override
+//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                view.loadUrl(url);
+//                return true;
+//            }
+//
+//            // 페이지 로딩 시작시 호출
+//            @Override
+//            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+//                Log.e("페이지 시작", url);
+//            }
+//
+//            @Override
+//            public void onPageFinished(WebView view, String url) {
+//                Log.e("페이지 로딩", url);
+//                addressAPI.loadUrl("javascript:sample2_execDaumPostcode();");
+//            }
+//        });
+//
+//        //최초 웹뷰 로드
+//        this.addressAPI.loadUrl("https://studynet-studysns.web.app");
+//    }
+//
+//    private class AndroidBridge {
+//        @JavascriptInterface
+//        public void processDATA(String data){
+//            // 다음(카카오) 주소 검색 API결과값이 브릿지 통로를 통해 전달 받음(from javascript)
+//            Address.setText(data.toString());
+//            GotoNickNameSet.setVisibility(view.VISIBLE);
+//            FadeIN.setVisibility(view.INVISIBLE);
+//            addressAPI.setVisibility(view.INVISIBLE);
+//            init_webView();
+//        }
+////        public void processDATA(String data){
+////            handler.post(new Runnable() {
+////                @Override
+////                public void run() {
+////                    System.out.println("주소" + data);
+////                    Address.setText(data);
+//////                    Address.setText(String.format("%s %s", arg2, arg3));
+//////                    init_webView();
+////                }
+////            });
+////        }
+//
+//    }
 
     @Override
     public void onClick(View view) {
@@ -114,18 +161,15 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         LoginAccountCreateAddressWebView AddressWeb = new LoginAccountCreateAddressWebView();
         int status = LoginAddressNetWorkStatus.getConnectivityStatus(getActivity().getApplicationContext());
         if(status == LoginAddressNetWorkStatus.TYPE_MOBILE || status == LoginAddressNetWorkStatus.TYPE_WIFI){
-            this.GotoNickNameSet.setVisibility(view.INVISIBLE);
-            this.FadeIN.setVisibility(view.VISIBLE);
-            this.addressAPI.setVisibility(view.VISIBLE);
-//            Navigation.findNavController(view).navigate(R.id.loginAccountCreateAddressWebView);
+//            this.GotoNickNameSet.setVisibility(view.INVISIBLE);
+//            this.FadeIN.setVisibility(view.VISIBLE);
+//            this.addressAPI.setVisibility(view.VISIBLE);
+            Navigation.findNavController(view).navigate(R.id.loginAccountCreateAddressWebView);
         } else{
             Toast.makeText(getContext(), "인터넷 연결을 확인해주세요", Toast.LENGTH_SHORT).show();
         }
     }
 
-    public void onActivityResult(int requestCode, int resultCode, Bundle bundle){
-
-    }
 
     private void CheckOtherConditionAndAgreement(View view) {
         //주소지 입력에 대해 체크하는 부분
