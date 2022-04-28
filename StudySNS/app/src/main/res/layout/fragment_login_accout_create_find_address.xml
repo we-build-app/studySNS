@@ -229,16 +229,27 @@
         app:layout_constraintTop_toBottomOf="@+id/Address_agree3"
         app:layout_constraintVertical_bias="0.859" />
 
-    <View
-        android:id="@+id/FadeInView"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fadein"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#70000000"
+        android:background="#6B000000"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <WebView
+            android:id="@+id/AddressAPI"
+            android:layout_width="371dp"
+            android:layout_height="631dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.59" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

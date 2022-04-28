@@ -100,7 +100,7 @@
         tools:layout="@layout/fragment_login_account_create_agree3" />
     <fragment
         android:id="@+id/loginAccountCreateAddressWebView"
-        android:name="com.example.domain.view.home.setting.LoginAccountCreateAddressWebView"
+        android:name="com.example.domain.view.home.login.LoginAccountCreateAddressWebView"
         android:label="fragment_login_account_create_address_web_view"
         tools:layout="@layout/fragment_login_account_create_address_web_view" />
 

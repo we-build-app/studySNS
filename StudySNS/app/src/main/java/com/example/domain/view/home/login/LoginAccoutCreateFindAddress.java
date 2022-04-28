@@ -2,12 +2,17 @@ package com.example.domain.view.home.login;
 
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.JavascriptInterface;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -18,13 +23,17 @@ import com.example.domain.view.home.setting.R;
 
 
 public class LoginAccoutCreateFindAddress extends Fragment implements View.OnClickListener {
+    //주소 요청 코드
+    private static final int SEARCH_ADDRESS_ACTIVITY = 10000;
 
-    private View FadeIn;
     private EditText Address;
     private Button GotoNickNameSet;
     private ImageView Goto_agree1, Goto_agree2, Goto_agree3;
     private CheckBox All_agree, Sub_agree1, Sub_agree2, Sub_agree3;
+    private WebView addressAPI;
 
+    private ConstraintLayout FadeIN;
+    private Handler handler;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,7 +41,6 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login_accout_create_find_address, container, false);
 
-        this.FadeIn = view.findViewById(R.id.FadeInView);
         this.Address = view.findViewById(R.id.Address_inputAddress);
         this.GotoNickNameSet = view.findViewById(R.id.GotoNickNameSetting);
         this.All_agree = view.findViewById(R.id.Address_Allagree);
@@ -42,8 +50,13 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         this.Goto_agree1 = view.findViewById(R.id.Goto_agree1);
         this.Goto_agree2 = view.findViewById(R.id.Goto_agree2);
         this.Goto_agree3 = view.findViewById(R.id.Goto_agree3);
+        this.FadeIN = view.findViewById(R.id.fadein);
+        this.addressAPI = view.findViewById(R.id.AddressAPI);
+        this.handler = new Handler();
 
-        this.FadeIn.bringToFront();
+        init_webView();
+
+        this.Address.setFocusable(false);
         this.Address.setOnClickListener(this);
         this.GotoNickNameSet.setOnClickListener(this);
         this.All_agree.setOnClickListener(this);
@@ -57,12 +70,34 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         return view;
     }
 
+    public void init_webView() {
+        this.addressAPI.getSettings().setJavaScriptEnabled(true);
+        this.addressAPI.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        this.addressAPI.addJavascriptInterface(new AndroidBridge(), "AddressAPI");
+        this.addressAPI.setWebChromeClient(new WebChromeClient());
+        this.addressAPI.loadUrl("file:///C:/Users/kyungsoo/public/index.html");
+    }
+
+    private class AndroidBridge {
+        @JavascriptInterface
+        public void setAddress(final String arg1, final String arg2, final String arg3){
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    Address.setText(String.format("%s %s", arg2, arg3));
+                    init_webView();
+                }
+            });
+        }
+
+    }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             // 주소 입력창 클릭시
             case R.id.Address_inputAddress:
-                TakeDataFromAddressAPI();
+                TakeDataFromAddressAPI(view);
                 break;
             // 다음으로 버튼 클릭시
             case R.id.GotoNickNameSetting:
@@ -75,20 +110,27 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         }
     }
 
-    private void TakeDataFromAddressAPI() {
+    private void TakeDataFromAddressAPI(View view) {
+        LoginAccountCreateAddressWebView AddressWeb = new LoginAccountCreateAddressWebView();
         int status = LoginAddressNetWorkStatus.getConnectivityStatus(getActivity().getApplicationContext());
         if(status == LoginAddressNetWorkStatus.TYPE_MOBILE || status == LoginAddressNetWorkStatus.TYPE_WIFI){
-
+            this.GotoNickNameSet.setVisibility(view.INVISIBLE);
+            this.FadeIN.setVisibility(view.VISIBLE);
+            this.addressAPI.setVisibility(view.VISIBLE);
+//            Navigation.findNavController(view).navigate(R.id.loginAccountCreateAddressWebView);
         } else{
             Toast.makeText(getContext(), "인터넷 연결을 확인해주세요", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Bundle bundle){
+
     }
 
     private void CheckOtherConditionAndAgreement(View view) {
         //주소지 입력에 대해 체크하는 부분
         if(this.Address.getText().toString().equals("")){
             Toast.makeText(getContext(), "주소를 입력해주세요.", Toast.LENGTH_SHORT).show();
-            Address.requestFocus();
         }
         //약관 동의에 관해 체크하는 부분
         else if(!(Sub_agree1.isChecked()) || !(Sub_agree2.isChecked())){
