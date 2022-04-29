@@ -37,12 +37,14 @@
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_password.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_profile_zone.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_rule.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/network_security_config.xml" value="0.1875" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/recycleritem_allboard.xml" value="0.5" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/recycleritem_popularboard.xml" value="0.3619791666666667" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/recycleritem_study.xml" value="0.3619791666666667" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/recycleritem_studyopenings.xml" value="0.5" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3463541666666667" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/menu/menu_option.xml" value="0.23802083333333332" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/xml/network_security_config.xml" value="0.23489583333333333" />
       </map>
     </option>
   </component>

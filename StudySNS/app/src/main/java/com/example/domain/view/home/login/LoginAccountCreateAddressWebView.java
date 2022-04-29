@@ -45,20 +45,6 @@ public class LoginAccountCreateAddressWebView extends Fragment {
         this.addressAPI.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         this.addressAPI.addJavascriptInterface(new AndroidBridge(), "AddressAPI");
         this.addressAPI.setWebViewClient(new WebViewClient() {
-
-            @Override
-            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-                // SSL 에러가 발생해도 계속 진행
-                handler.proceed();
-            }
-
-
-            // 페이지 로딩 시작시 호출
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                Log.e("페이지 시작", url);
-            }
-
             @Override
             public void onPageFinished(WebView view, String url) {
                 Log.e("페이지 로딩", url);
@@ -74,11 +60,11 @@ public class LoginAccountCreateAddressWebView extends Fragment {
         @JavascriptInterface
         public void processDATA(String data){
             // 다음(카카오) 주소 검색 API결과값이 브릿지 통로를 통해 전달 받음(from javascript)
-            Log.e("주소값", data);
-            Bundle bundle = new Bundle();
-            bundle.putString("Address", data);
-            Navigation.findNavController(view).navigate(R.id.loginAccoutCreateFindAddress);
-            getActivity().finish();
+//            Log.e("주소값", data);
+//            Bundle bundle = new Bundle();
+//            bundle.putString("Address", data);
+//            Navigation.findNavController(view).navigate(R.id.loginAccoutCreateFindAddress);
+//            getActivity().finish();
         }
 //        @JavascriptInterface
 //        @SuppressWarnings("unused")
