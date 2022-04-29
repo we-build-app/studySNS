@@ -1,5 +1,6 @@
 package com.example.domain.view.home.login;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.http.SslError;
 import android.os.Bundle;
@@ -15,11 +16,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.JavascriptInterface;
+
 import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.example.domain.view.home.setting.R;
+
 
 public class LoginAccountCreateAddressWebView extends Fragment {
 
@@ -43,6 +46,7 @@ public class LoginAccountCreateAddressWebView extends Fragment {
     private void LoadingWebViewwithAddressAPI() {
         this.addressAPI.getSettings().setJavaScriptEnabled(true);
         this.addressAPI.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        this.addressAPI.getSettings().setDomStorageEnabled(true);
         this.addressAPI.addJavascriptInterface(new AndroidBridge(), "AddressAPI");
         this.addressAPI.setWebViewClient(new WebViewClient() {
             @Override
@@ -57,26 +61,35 @@ public class LoginAccountCreateAddressWebView extends Fragment {
     }
 
     private class AndroidBridge {
-        @JavascriptInterface
-        public void processDATA(String data){
-            // 다음(카카오) 주소 검색 API결과값이 브릿지 통로를 통해 전달 받음(from javascript)
-//            Log.e("주소값", data);
-//            Bundle bundle = new Bundle();
-//            bundle.putString("Address", data);
-//            Navigation.findNavController(view).navigate(R.id.loginAccoutCreateFindAddress);
-//            getActivity().finish();
-        }
 //        @JavascriptInterface
 //        @SuppressWarnings("unused")
-//        public void processDATA(String roadAdd) {
-//            handler.post(new Runnable() {
-//                @Override
-//                public void run() {
-//                    navController.getPreviousBackStackEntry().getSavedStateHandle().set("roadAddress", roadAdd);
-//
-//                }
-//            });
+//        public void processDATA(String data){
+//            Log.e("주소값", data);
+//            LoadingWebViewwithAddressAPI();
+//            // 다음(카카오) 주소 검색 API결과값이 브릿지 통로를 통해 전달 받음(from javascript)
+////            Log.e("주소값", data);
+////            Bundle bundle = new Bundle();
+////            bundle.putString("Address", data);
+////            Navigation.findNavController(view).navigate(R.id.loginAccoutCreateFindAddress);
+////            getActivity().finish();
 //        }
+        @JavascriptInterface
+        @SuppressWarnings("unused")
+        public void processDATA(String data) {
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    Log.e("주소값", data);
+                    Bundle bundle = new Bundle();
+                    Intent i = new Intent();
+                    bundle.putString("Address", data);
+//                    LoginAccoutCreateFindAddress LACF = new LoginAccoutCreateFindAddress();
+//                    LACF.setArguments(bundle);
+                    Navigation.findNavController(view).navigate(R.id.loginAccoutCreateFindAddress, bundle);
+
+                }
+            });
+        }
 //        public void processDATA(String data){
 //            handler.post(new Runnable() {
 //                @Override

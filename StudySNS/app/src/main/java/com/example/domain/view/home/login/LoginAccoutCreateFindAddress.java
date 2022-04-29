@@ -77,46 +77,29 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         this.Goto_agree1.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree1));
         this.Goto_agree1.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree2));
         this.Goto_agree1.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree3));
+
+        init_webView();
         return view;
     }
 
-//    public void init_webView() {
-//        this.addressAPI.getSettings().setJavaScriptEnabled(true);
-//        this.addressAPI.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-//        this.addressAPI.addJavascriptInterface(new AndroidBridge(), "AddressAPI");
-//        this.addressAPI.setWebViewClient(new WebViewClient() {
-//
-//            @Override
-//            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-//                // SSL 에러가 발생해도 계속 진행
-//                handler.proceed();
-//            }
-//
-//            @Override
-//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//                view.loadUrl(url);
-//                return true;
-//            }
-//
-//            // 페이지 로딩 시작시 호출
-//            @Override
-//            public void onPageStarted(WebView view, String url, Bitmap favicon) {
-//                Log.e("페이지 시작", url);
-//            }
-//
-//            @Override
-//            public void onPageFinished(WebView view, String url) {
-//                Log.e("페이지 로딩", url);
-//                addressAPI.loadUrl("javascript:sample2_execDaumPostcode();");
-//            }
-//        });
-//
-//        //최초 웹뷰 로드
-//        this.addressAPI.loadUrl("https://studynet-studysns.web.app");
-//    }
-//
-//    private class AndroidBridge {
-//        @JavascriptInterface
+    public void init_webView() {
+        this.addressAPI.getSettings().setJavaScriptEnabled(true);
+        this.addressAPI.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        this.addressAPI.addJavascriptInterface(new AndroidBridge(), "AddressAPI");
+        this.addressAPI.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                Log.e("페이지 로딩", url);
+                addressAPI.loadUrl("javascript:sample2_execDaumPostcode();");
+            }
+        });
+
+        //최초 웹뷰 로드
+        this.addressAPI.loadUrl("https://studynet-studysns.web.app");
+    }
+
+    private class AndroidBridge {
+        @JavascriptInterface
 //        public void processDATA(String data){
 //            // 다음(카카오) 주소 검색 API결과값이 브릿지 통로를 통해 전달 받음(from javascript)
 //            Address.setText(data.toString());
@@ -125,19 +108,22 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
 //            addressAPI.setVisibility(view.INVISIBLE);
 //            init_webView();
 //        }
-////        public void processDATA(String data){
-////            handler.post(new Runnable() {
-////                @Override
-////                public void run() {
-////                    System.out.println("주소" + data);
-////                    Address.setText(data);
-//////                    Address.setText(String.format("%s %s", arg2, arg3));
-//////                    init_webView();
-////                }
-////            });
-////        }
-//
-//    }
+        public void processDATA(String data){
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println("주소" + data);
+                    Address.setText(data);
+                    GotoNickNameSet.setVisibility(view.VISIBLE);
+            FadeIN.setVisibility(view.INVISIBLE);
+            addressAPI.setVisibility(view.INVISIBLE);
+//                    Address.setText(String.format("%s %s", arg2, arg3));
+                    init_webView();
+                }
+            });
+        }
+
+    }
 
     @Override
     public void onClick(View view) {
@@ -150,6 +136,7 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
             case R.id.GotoNickNameSetting:
                 CheckOtherConditionAndAgreement(view);
                 break;
+
                 //약관 모두 동의하기 클릭시
             case R.id.Address_Allagree:
                 CheckOtherAgreement();
@@ -161,10 +148,10 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         LoginAccountCreateAddressWebView AddressWeb = new LoginAccountCreateAddressWebView();
         int status = LoginAddressNetWorkStatus.getConnectivityStatus(getActivity().getApplicationContext());
         if(status == LoginAddressNetWorkStatus.TYPE_MOBILE || status == LoginAddressNetWorkStatus.TYPE_WIFI){
-//            this.GotoNickNameSet.setVisibility(view.INVISIBLE);
-//            this.FadeIN.setVisibility(view.VISIBLE);
-//            this.addressAPI.setVisibility(view.VISIBLE);
-            Navigation.findNavController(view).navigate(R.id.loginAccountCreateAddressWebView);
+            this.GotoNickNameSet.setVisibility(view.INVISIBLE);
+            this.FadeIN.setVisibility(view.VISIBLE);
+            this.addressAPI.setVisibility(view.VISIBLE);
+//            Navigation.findNavController(view).navigate(R.id.loginAccountCreateAddressWebView);
         } else{
             Toast.makeText(getContext(), "인터넷 연결을 확인해주세요", Toast.LENGTH_SHORT).show();
         }
