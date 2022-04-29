@@ -55,24 +55,11 @@ public class LoginAccountCreateAddressWebView extends Fragment {
                 addressAPI.loadUrl("javascript:sample2_execDaumPostcode();");
             }
         });
-
         //최초 웹뷰 로드
         this.addressAPI.loadUrl("https://studynet-studysns.web.app");
     }
 
     private class AndroidBridge {
-//        @JavascriptInterface
-//        @SuppressWarnings("unused")
-//        public void processDATA(String data){
-//            Log.e("주소값", data);
-//            LoadingWebViewwithAddressAPI();
-//            // 다음(카카오) 주소 검색 API결과값이 브릿지 통로를 통해 전달 받음(from javascript)
-////            Log.e("주소값", data);
-////            Bundle bundle = new Bundle();
-////            bundle.putString("Address", data);
-////            Navigation.findNavController(view).navigate(R.id.loginAccoutCreateFindAddress);
-////            getActivity().finish();
-//        }
         @JavascriptInterface
         @SuppressWarnings("unused")
         public void processDATA(String data) {
@@ -83,25 +70,10 @@ public class LoginAccountCreateAddressWebView extends Fragment {
                     Bundle bundle = new Bundle();
                     Intent i = new Intent();
                     bundle.putString("Address", data);
-//                    LoginAccoutCreateFindAddress LACF = new LoginAccoutCreateFindAddress();
-//                    LACF.setArguments(bundle);
                     Navigation.findNavController(view).navigate(R.id.loginAccoutCreateFindAddress, bundle);
 
                 }
             });
         }
-//        public void processDATA(String data){
-//            handler.post(new Runnable() {
-//                @Override
-//                public void run() {
-//                    System.out.println("주소" + data);
-//                    Address.setText(data);
-////                    Address.setText(String.format("%s %s", arg2, arg3));
-////                    init_webView();
-//                }
-//            });
-//        }
-
-
     }
 }

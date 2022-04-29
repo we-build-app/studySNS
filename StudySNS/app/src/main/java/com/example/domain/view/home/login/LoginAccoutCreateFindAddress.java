@@ -100,14 +100,6 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
 
     private class AndroidBridge {
         @JavascriptInterface
-//        public void processDATA(String data){
-//            // 다음(카카오) 주소 검색 API결과값이 브릿지 통로를 통해 전달 받음(from javascript)
-//            Address.setText(data.toString());
-//            GotoNickNameSet.setVisibility(view.VISIBLE);
-//            FadeIN.setVisibility(view.INVISIBLE);
-//            addressAPI.setVisibility(view.INVISIBLE);
-//            init_webView();
-//        }
         public void processDATA(String data){
             handler.post(new Runnable() {
                 @Override
@@ -115,9 +107,8 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
                     System.out.println("주소" + data);
                     Address.setText(data);
                     GotoNickNameSet.setVisibility(view.VISIBLE);
-            FadeIN.setVisibility(view.INVISIBLE);
-            addressAPI.setVisibility(view.INVISIBLE);
-//                    Address.setText(String.format("%s %s", arg2, arg3));
+                    FadeIN.setVisibility(view.INVISIBLE);
+                    addressAPI.setVisibility(view.INVISIBLE);
                     init_webView();
                 }
             });
