@@ -45,6 +45,21 @@
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3463541666666667" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/menu/menu_option.xml" value="0.23802083333333332" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/xml/network_security_config.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/dlsqo/AppData/Local/Android/Sdk/platforms/android-32/data/res/drawable/btn_star.xml" value="0.1705" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/drawable/half_circle.xml" value="0.1705" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/drawable/rotate_star_btn.xml" value="0.25" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/drawable/round_corner2.xml" value="0.272" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/drawable/star_btn.xml" value="0.25" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/activity_intro.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/activity_login.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/activity_main2.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/fragment_home.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/fragment_home_communtiy.xml" value="0.18465045592705168" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/fragment_login_home.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/fragment_login_id_find.xml" value="0.37395833333333334" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/fragment_login_pw_find.xml" value="0.37395833333333334" />
+        <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/layout/fragment_setting_password.xml" value="0.37395833333333334" />
       </map>
     </option>
   </component>

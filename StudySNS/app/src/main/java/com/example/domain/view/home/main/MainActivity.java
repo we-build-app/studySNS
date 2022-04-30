@@ -7,86 +7,176 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.navigation.Navigation;
 
+import android.animation.ObjectAnimator;
+import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
 import android.widget.Space;
 
+import com.example.asset.domain.AbstractActivity;
+import com.example.domain.view.home.Intro;
+import com.example.domain.view.home.LoginActivity;
 import com.example.domain.view.home.setting.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.snackbar.Snackbar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AbstractActivity {
 
     private Space status_bar_space;
 
-    private int statusBarHeight;
+    private FragmentContainerView main_fragment;
 
     private BottomNavigationView bottomNavigationView;
 
-    private FragmentContainerView main_fragment;
+    private FloatingActionButton floatingActionButton;
+
+    private FloatingActionButton floatingActionButtonOfCall;
+    private FloatingActionButton floatingActionButtonOfVideo;
+    private FloatingActionButton floatingActionButtonOfMessage;
+
+    private ImageView half_circle_image;
+
+    private boolean isFabOpen;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int getViewId() { return R.layout.activity_main; }
 
-//        Toolbar tb = (Toolbar) findViewById(R.id.toolbar) ;
-//        tb.setBackgroundColor(Color.WHITE);
-//        tb.setTitleTextColor(Color.BLACK);
-
-//        tb.setOnClickListener();
-//        setSupportActionBar(tb) ;
-
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-
-        this.statusBarHeight = 0;
-        int resId = getResources().getIdentifier("status_bar_height", "dimen", "android");
-        if(resId>0){
-            this.statusBarHeight = getResources().getDimensionPixelSize(resId);
-        }
-
+    @Override
+    protected void associateView() {
         this.status_bar_space = findViewById(R.id.status_bar_space);
-
-        this.status_bar_space.getLayoutParams().height = statusBarHeight;
-
-        this.bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
         this.main_fragment = findViewById(R.id.main_fragment);
+        this.bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        this.floatingActionButton = findViewById(R.id.floatingActionButton);
+        this.floatingActionButtonOfCall = findViewById(R.id.floatingActionButtonOfCall);
+        this.floatingActionButtonOfVideo = findViewById(R.id.floatingActionButtonOfVideo);
+        this.floatingActionButtonOfMessage = findViewById(R.id.floatingActionButtonOfMessage);
+        this.half_circle_image = findViewById(R.id.half_circle_image);
+    }
 
-        this.bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+    @Override
+    protected void initialize() {
+        this.controlTopSpace(this.status_bar_space);
+        this.bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.homeBTN:
-                        Navigation.findNavController(main_fragment).navigate(R.id.homeFragment);
+                        navigateTo(main_fragment, R.id.homeFragment);
                         break;
                     case R.id.communityBTN:
-                        Navigation.findNavController(main_fragment).navigate(R.id.home_Communtiy);
+                        navigateTo(main_fragment, R.id.home_Communtiy);
                         break;
                     case R.id.plannerBTN:
-//                        Navigation.findNavController(main_fragment).navigate(R.id.action_homeFragment_to_loginFragment);
+//                        navigateTo(main_fragment, R.id.homeFragment);
                         break;
                     case R.id.settingBTN:
-                        Navigation.findNavController(main_fragment).navigate(R.id.settingsFragment);
+                        navigateTo(main_fragment, R.id.settingsFragment);
                         break;
                 }
-                return false;
+                return true;
             }
         });
-
-
+        this.floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toggleFab();
+//                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+            }
+        });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_option, menu);
+    private void toggleFab() {
 
-        return super.onCreateOptionsMenu(menu);
+        if (isFabOpen) {
+            ObjectAnimator object = ObjectAnimator.ofFloat(floatingActionButton, "rotation", 0);
+            object.setInterpolator(new LinearInterpolator());
+            object.setDuration(500);
+            object.start();
+//            floatingActionButton.setBackgroundTintList();
+//            floatingActionButton.setBackgroundColor(Color.RED);
+            floatingActionButtonOfCall.setVisibility(View.GONE);
+            floatingActionButtonOfVideo.setVisibility(View.GONE);
+            floatingActionButtonOfMessage.setVisibility(View.GONE);
+            new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    floatingActionButton.setBackgroundTintList(ColorStateList.valueOf(Color.rgb(79,201,255)));
+                    floatingActionButton.setImageResource(R.drawable.star_btn);
+                }
+            }, 400);
+            RotateAnimation ra = new RotateAnimation(180, 0, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0f);
+            ra.setDuration(500);
+            ra.setFillAfter(true);
+            half_circle_image.startAnimation(ra);
+
+//            floatingActionButton.setImageResource(R.drawable.star_btn);
+
+//            fab_sub1.startAnimation(fab_close);
+//
+//            fab_sub2.startAnimation(fab_close);
+//
+//            fab_sub1.setClickable(false);
+//
+//            fab_sub2.setClickable(false);
+
+            isFabOpen = false;
+
+        } else {
+            ObjectAnimator object = ObjectAnimator.ofFloat(floatingActionButton, "rotation", 180);
+            object.setInterpolator(new LinearInterpolator());
+            object.setDuration(500);
+            object.start();
+//            floatingActionButton.setBackgroundColor(Color.RED);
+
+//            Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_anim);
+//            floatingActionButton.startAnimation(anim);
+//            floatingActionButton.setRotation(90.0f);
+            new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    floatingActionButton.setImageResource(R.drawable.ic_baseline_close_24);
+                    floatingActionButton.setBackgroundTintList(ColorStateList.valueOf(Color.RED));
+                    floatingActionButtonOfCall.setVisibility(View.VISIBLE);
+                    floatingActionButtonOfVideo.setVisibility(View.VISIBLE);
+                    floatingActionButtonOfMessage.setVisibility(View.VISIBLE);
+                }
+            }, 400);
+            RotateAnimation ra = new RotateAnimation(0, 180, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0f);
+            ra.setDuration(500);
+            ra.setFillAfter(true);
+            half_circle_image.startAnimation(ra);
+
+//            floatingActionButton.setImageResource(R.drawable.ic_baseline_close_24);
+
+//            fab_sub1.startAnimation(fab_open);
+//
+//            fab_sub2.startAnimation(fab_open);
+//
+//            fab_sub1.setClickable(true);
+//
+//            fab_sub2.setClickable(true);
+
+            isFabOpen = true;
+
+        }
+
     }
 }
