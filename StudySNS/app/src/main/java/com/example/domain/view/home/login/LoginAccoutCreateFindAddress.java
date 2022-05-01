@@ -107,8 +107,8 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
                     System.out.println("주소" + data);
                     Address.setText(data);
                     GotoNickNameSet.setVisibility(view.VISIBLE);
-                    FadeIN.setVisibility(view.INVISIBLE);
-                    addressAPI.setVisibility(view.INVISIBLE);
+                    FadeIN.setVisibility(view.GONE);
+                    addressAPI.setVisibility(view.GONE);
                     init_webView();
                 }
             });
