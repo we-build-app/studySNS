@@ -75,8 +75,8 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         this.Sub_agree3.setOnClickListener(this);
 
         this.Goto_agree1.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree1));
-        this.Goto_agree1.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree2));
-        this.Goto_agree1.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree3));
+        this.Goto_agree2.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree2));
+        this.Goto_agree3.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree3));
 
         init_webView();
         return view;
