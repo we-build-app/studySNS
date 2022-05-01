@@ -7,7 +7,7 @@
 
     <Button
         android:id="@+id/FIndID_FindButton"
-        android:layout_width="350dp"
+        android:layout_width="370dp"
         android:layout_height="55dp"
         android:layout_marginBottom="192dp"
         android:background="@drawable/register_complete_round"
@@ -60,10 +60,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FindID_cancel"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.182" />
 
     <ImageView
         android:id="@+id/FindID_cancel"
@@ -71,15 +71,15 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintVertical_bias="0.048"
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
 
     <EditText
         android:id="@+id/FindID_name"
-        android:layout_width="350dp"
+        android:layout_width="370dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="이름을 입력해주세요"
@@ -101,10 +101,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_findID_title"
-        app:layout_constraintVertical_bias="0.076" />
+        app:layout_constraintVertical_bias="0.073" />
 
     <TextView
         android:id="@+id/FindID_EmailTitle"
@@ -115,14 +115,14 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FindID_name"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <EditText
         android:id="@+id/FindID_email"
-        android:layout_width="350dp"
+        android:layout_width="370dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="@를 포함해서 입력해주세요"

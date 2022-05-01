@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/pwFindButton"
-        android:layout_width="350dp"
+        android:layout_width="370dp"
         android:layout_height="55dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/register_complete_round"
@@ -28,17 +28,16 @@
         android:id="@+id/FindPW_Title"
         android:layout_width="133dp"
         android:layout_height="30dp"
-        android:gravity="center_horizontal"
         android:text="비밀번호 찾기"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintVertical_bias="0.16" />
 
     <TextView
         android:id="@+id/FindPW_IDText"
@@ -71,7 +70,7 @@
 
     <EditText
         android:id="@+id/FindPW_Name"
-        android:layout_width="350dp"
+        android:layout_width="370dp"
         android:layout_height="42dp"
         android:hint="이름을 입력해주세요"
         android:textColor="#000000"
@@ -85,7 +84,7 @@
 
     <EditText
         android:id="@+id/FindPW_Password"
-        android:layout_width="350dp"
+        android:layout_width="370dp"
         android:layout_height="42dp"
         android:hint="아이디를 입력 해주세요"
         android:textColor="#8FC95C"
@@ -99,7 +98,7 @@
 
     <EditText
         android:id="@+id/emailEditText"
-        android:layout_width="350dp"
+        android:layout_width="370dp"
         android:layout_height="42dp"
         android:hint="@를 포함한 이메일을 입력해주세요 "
         android:textColor="#8FC95C"
@@ -118,10 +117,10 @@
         android:backgroundTint="@color/main_skyblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintVertical_bias="0.041"
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
 
     <TextView
@@ -133,10 +132,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FindPW_Title"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <TextView
         android:id="@+id/textView4"
@@ -147,7 +146,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FindPW_Name"
         app:layout_constraintVertical_bias="0.057" />
@@ -161,9 +160,9 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FindPW_Password"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.06" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
