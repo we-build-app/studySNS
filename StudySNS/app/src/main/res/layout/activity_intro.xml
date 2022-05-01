@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_skyblue"
-    tools:context="com.example.domain.view.home.Intro">
+    tools:context="com.example.domain.view.home.view.Intro">
 
     <ImageView
         android:id="@+id/intro_character"

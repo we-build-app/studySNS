@@ -15,10 +15,10 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/Theme.Setting">
-        <activity android:name="com.example.domain.view.home.main.MainActivity"></activity>
-        <activity android:name="com.example.domain.view.home.LoginActivity">
+        <activity android:name="com.example.domain.view.home.view.MainActivity"></activity>
+        <activity android:name="com.example.domain.view.home.view.LoginActivity">
         </activity>
-        <activity android:name="com.example.domain.view.home.Intro"
+        <activity android:name="com.example.domain.view.home.view.Intro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

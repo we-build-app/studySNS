@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.navigation.Navigation;
 
 public abstract class AbstractFragment extends Fragment {
@@ -27,4 +28,5 @@ public abstract class AbstractFragment extends Fragment {
 
     // Encapsulate
     protected void navigateTo(int destinationId) { Navigation.findNavController(this.getView()).navigate(destinationId); }
+    protected void navigateTo(FragmentContainerView fragmentContainerView, int destinationId) { Navigation.findNavController(fragmentContainerView).navigate(destinationId); }
 }

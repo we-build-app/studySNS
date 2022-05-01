@@ -8,7 +8,7 @@
     <!-- Home !-->
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.domain.view.home.main.HomeFragment"
+        android:name="com.example.domain.view.home.view.main.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"
         >
@@ -21,12 +21,15 @@
         <action
             android:id="@+id/action_homeFragment_to_home_Communtiy"
             app:destination="@id/home_Communtiy" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingHomeFragment"
+            app:destination="@id/settingHomeFragment" />
     </fragment>
 
     <!-- Setting !-->
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.domain.view.home.setting.SettingsFragment"
+        android:name="com.example.domain.view.home.view.setting.SettingsFragment"
         android:label="SettingsFragment"
         >
         <action
@@ -47,38 +50,38 @@
     </fragment>
     <fragment
         android:id="@+id/settingNickname"
-        android:name="com.example.domain.view.home.setting.SettingNickname"
+        android:name="com.example.domain.view.home.view.setting.SettingNickname"
         android:label="fragment_setting_nickname"
         tools:layout="@layout/fragment_setting_nickname" />
     <fragment
         android:id="@+id/settingRule"
-        android:name="com.example.domain.view.home.setting.SettingRule"
+        android:name="com.example.domain.view.home.view.setting.SettingRule"
         android:label="fragment_setting_rule"
         tools:layout="@layout/fragment_setting_rule" />
     <fragment
         android:id="@+id/settingAlarm"
-        android:name="com.example.domain.view.home.setting.SettingAlarm"
+        android:name="com.example.domain.view.home.view.setting.SettingAlarm"
         android:label="fragment_setting_alarm"
         tools:layout="@layout/fragment_setting_alarm" />
     <fragment
         android:id="@+id/settingPassword"
-        android:name="com.example.domain.view.home.setting.SettingPassword"
+        android:name="com.example.domain.view.home.view.setting.SettingPassword"
         android:label="fragment_setting_password"
         tools:layout="@layout/fragment_setting_password" />
     <fragment
         android:id="@+id/settingEmail"
-        android:name="com.example.domain.view.home.setting.SettingEmail"
+        android:name="com.example.domain.view.home.view.setting.SettingEmail"
         android:label="fragment_setting_email"
         tools:layout="@layout/fragment_setting_email" />
     <fragment
         android:id="@+id/settingProfileZone"
-        android:name="com.example.domain.view.home.setting.SettingProfileZone"
+        android:name="com.example.domain.view.home.view.setting.SettingProfileZone"
         android:label="fragment_setting_profile_zone"
         tools:layout="@layout/fragment_setting_profile_zone" />
     <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/>
     <fragment
         android:id="@+id/home_Communtiy"
-        android:name="com.example.domain.view.home.main.HomeCommuntiy"
+        android:name="com.example.domain.view.home.view.main.HomeCommuntiy"
         android:label="fragment_home__communtiy"
         tools:layout="@layout/fragment_home_communtiy" >
         <action
@@ -93,17 +96,22 @@
     </fragment>
     <fragment
         android:id="@+id/homeCommnutiyAllBoard"
-        android:name="com.example.domain.view.home.main.HomeCommnutiyAllBoard"
+        android:name="com.example.domain.view.home.view.main.HomeCommnutiyAllBoard"
         android:label="fragment_home_commnutiy_all_board"
         tools:layout="@layout/fragment_home_commnutiy_all_board" />
     <fragment
         android:id="@+id/homeCommuntiyPopularBoard"
-        android:name="com.example.domain.view.home.main.HomeCommuntiyPopularBoard"
+        android:name="com.example.domain.view.home.view.main.HomeCommuntiyPopularBoard"
         android:label="fragment_home_communtiy_popular_board"
         tools:layout="@layout/fragment_home_communtiy_popular_board" />
     <fragment
         android:id="@+id/homeCommunityStudyOpenings"
-        android:name="com.example.domain.view.home.main.HomeCommunityStudyOpenings"
+        android:name="com.example.domain.view.home.view.main.HomeCommunityStudyOpenings"
         android:label="fragment_home_community_study_openings"
         tools:layout="@layout/fragment_home_community_study_openings" />
+    <fragment
+        android:id="@+id/settingHomeFragment"
+        android:name="com.example.domain.view.home.view.setting.SettingHomeFragment"
+        android:label="fragment_setting_home"
+        tools:layout="@layout/fragment_setting_home" />
 </navigation>
