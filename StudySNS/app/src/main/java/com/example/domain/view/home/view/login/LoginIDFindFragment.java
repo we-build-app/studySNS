@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -17,6 +18,7 @@ public class LoginIDFindFragment extends Fragment {
     // Associate
         // View
         private Button idFindButton;
+        private ImageView FindID_cancel;
         private TextView FindPWText, RegisterText;
 
     @Override
@@ -30,11 +32,13 @@ public class LoginIDFindFragment extends Fragment {
 
         // Associate View
         this.idFindButton = view.findViewById(R.id.FIndID_FindButton);
+        this.FindID_cancel = view.findViewById(R.id.FindID_cancel);
         this.FindPWText = view.findViewById(R.id.FindID_PasswordText);
         this.RegisterText = view.findViewById(R.id.FindID_RegisterText);
 
         // Set View Callback
         this.idFindButton.setOnClickListener(v-> Navigation.findNavController(view).navigate(R.id.action_loginIDFind_to_loginIDFindResult));
+        this.FindID_cancel.setOnClickListener(v-> Navigation.findNavController(view).navigate(R.id.loginFragment));
         this.FindPWText.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginPWFind));
         this.RegisterText.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreate));
     }
