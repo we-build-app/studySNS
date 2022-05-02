@@ -33,6 +33,8 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
     private CheckBox All_agree, Sub_agree1, Sub_agree2, Sub_agree3;
     private WebView addressAPI;
     private String AddressResult;
+    private boolean onload;
+
 
     private ConstraintLayout FadeIN;
     private View view;
@@ -56,6 +58,7 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         this.FadeIN = view.findViewById(R.id.fadein);
         this.addressAPI = view.findViewById(R.id.AddressAPI);
         this.handler = new Handler();
+        this.onload = false;
 
         this.Address.setFocusable(false);
         this.Address.setOnClickListener(this);
@@ -70,6 +73,7 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
         this.Goto_agree3.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginAccountCreateAgree3));
 
         init_webView();
+
         return view;
     }
 
@@ -100,6 +104,14 @@ public class LoginAccoutCreateFindAddress extends Fragment implements View.OnCli
                     GotoNickNameSet.setVisibility(view.VISIBLE);
                     FadeIN.setVisibility(view.GONE);
                     addressAPI.setVisibility(view.GONE);
+                    FadeIN.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                GotoNickNameSet.setVisibility(view.VISIBLE);
+                                FadeIN.setVisibility(view.GONE);
+                                addressAPI.setVisibility(view.GONE);
+                            }
+                    });
                     init_webView();
                 }
             });
