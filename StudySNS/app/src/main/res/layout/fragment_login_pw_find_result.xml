@@ -53,7 +53,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/passwordLayout"
-        android:layout_width="355dp"
+        android:layout_width="360dp"
         android:layout_height="51dp"
         android:background="@drawable/nickname_border"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,7 +94,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/repasswordLayout"
-        android:layout_width="355dp"
+        android:layout_width="360dp"
         android:layout_height="51dp"
         android:background="@drawable/nickname_border"
         app:layout_constraintBottom_toBottomOf="parent"
