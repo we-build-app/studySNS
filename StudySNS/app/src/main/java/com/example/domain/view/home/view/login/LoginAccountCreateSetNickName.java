@@ -8,6 +8,7 @@ import androidx.navigation.Navigation;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class LoginAccountCreateSetNickName extends Fragment  {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String input = NickName.getText().toString();
                 TextSize.setText(String.valueOf(input.length())+" / 10");
+                //깃 커밋을 위힌 것
             }
             @Override
             public void afterTextChanged(Editable s) { }
