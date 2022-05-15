@@ -163,8 +163,8 @@
 
         <Button
             android:id="@+id/PopularBoard_report"
-            android:layout_width="75dp"
-            android:layout_height="29dp"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
             android:backgroundTint="#C00000"
             android:text="신고하기"
             android:textSize="7sp"
@@ -173,7 +173,7 @@
             app:iconSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintHorizontal_bias="0.917"
             app:layout_constraintStart_toEndOf="@+id/PopularBoard_date"
             app:layout_constraintTop_toBottomOf="@+id/PopularBoard_username"
             app:layout_constraintVertical_bias="0.0" />

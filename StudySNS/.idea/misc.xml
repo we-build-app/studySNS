@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home_community_study_openings.xml" value="0.3605072463768116" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_home_communtiy_popular_board.xml" value="0.3605072463768116" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_account_create.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_account_create_address_web_view.xml" value="0.18432971014492755" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_account_create_agree1.xml" value="0.3619791666666667" />
@@ -19,10 +21,12 @@
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_login_pw_find_result.xml" value="0.33" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_alarm.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_email.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_home.xml" value="0.3605072463768116" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_nickname.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_password.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_profile_zone.xml" value="0.358695652173913" />
         <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/fragment_setting_rule.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio_gitHub/studySNS_Build/StudySNS/app/src/main/res/layout/recycleritem_popularboard.xml" value="0.3605072463768116" />
         <entry key="..\:/Users/dlsqo/AppData/Local/Android/Sdk/platforms/android-32/data/res/drawable/btn_star.xml" value="0.1705" />
         <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/drawable/half_circle.xml" value="0.1705" />
         <entry key="..\:/Users/dlsqo/Documents/GitHub/studySNS/StudySNS/app/src/main/res/drawable/rotate_star_btn.xml" value="0.25" />
