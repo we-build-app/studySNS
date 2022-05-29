@@ -18,9 +18,11 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 
-    <string name="newEmail">이메일 (새  이메일 주소를 입력해주세요 )</string>
-    <string name="editEmail">이메일 변경</string>
-    <string name="password">계정 비밀번호</string>
-    <string name="emailExample">abc@gmail.com</string>
+    <string name="new_email">이메일 (새 이메일 주소를 입력해주세요 )</string>
+    <string name="password_change_id">아이디를 입력해주세요</string>
+    <string name="password_change_name">이름을 입력해주세요</string>
+    <string name="edit_email">이메일 변경</string>
+    <string name="account_password">계정 비밀번호</string>
+    <string name="email_example">abc@gmail.com</string>
     <string name="close">close</string>
 </resources>
