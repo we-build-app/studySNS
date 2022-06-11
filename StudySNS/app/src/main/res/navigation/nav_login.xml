@@ -8,7 +8,7 @@
     <!-- Login !-->
     <fragment
         android:id="@+id/loginPWFind"
-        android:name="com.example.domain.view.home.view.login.LoginPWFindFragment"
+        android:name="com.softcon.studysns.view.home.view.login.LoginPWFindFragment"
         android:label="fragment_login_pw_find"
         tools:layout="@layout/fragment_login_pw_find" >
         <action
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginIDFind"
-        android:name="com.example.domain.view.home.view.login.LoginIDFindFragment"
+        android:name="com.softcon.studysns.view.home.view.login.LoginIDFindFragment"
         android:label="fragment_login_id_find"
         tools:layout="@layout/fragment_login_id_find" >
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginAccountCreate"
-        android:name="com.example.domain.view.home.view.login.LoginAccountCreateFragment"
+        android:name="com.softcon.studysns.view.home.view.login.LoginAccountCreateFragment"
         android:label="fragment_login_account_create"
         tools:layout="@layout/fragment_login_account_create" >
         <action
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.domain.view.home.view.login.LoginFragment"
+        android:name="com.softcon.studysns.view.home.view.login.LoginFragment"
         android:label="LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_loginPWFind2"
@@ -49,17 +49,17 @@
     </fragment>
     <fragment
         android:id="@+id/loginIDFindResult"
-        android:name="com.example.domain.view.home.view.login.LoginIDFindResult"
+        android:name="com.softcon.studysns.view.home.view.login.LoginIDFindResult"
         android:label="fragment_login_i_d_find_result"
         tools:layout="@layout/fragment_login_id_find_result" />
     <fragment
         android:id="@+id/loginPWFindResult"
-        android:name="com.example.domain.view.home.view.login.LoginPWFindResult"
+        android:name="com.softcon.studysns.view.home.view.login.LoginPWFindResult"
         android:label="fragment_login_p_w_find_result"
         tools:layout="@layout/fragment_login_pw_find_result" />
     <fragment
         android:id="@+id/loginAccoutCreateFindAddress"
-        android:name="com.example.domain.view.home.view.login.LoginAccoutCreateFindAddress"
+        android:name="com.softcon.studysns.view.home.view.login.LoginAccoutCreateFindAddress"
         android:label="fragment_login_accout_create_find_address"
         tools:layout="@layout/fragment_login_accout_create_find_address" >
         <action
@@ -80,27 +80,27 @@
     </fragment>
     <fragment
         android:id="@+id/loginAccountCreateSetNickName"
-        android:name="com.example.domain.view.home.view.login.LoginAccountCreateSetNickName"
+        android:name="com.softcon.studysns.view.home.view.login.LoginAccountCreateSetNickName"
         android:label="fragment_login_account_create_set_nick_name"
         tools:layout="@layout/fragment_login_account_create_set_nick_name" />
     <fragment
         android:id="@+id/loginAccountCreateAgree1"
-        android:name="com.example.domain.view.home.view.login.LoginAccountCreateAgree1"
+        android:name="com.softcon.studysns.view.home.view.login.LoginAccountCreateAgree1"
         android:label="fragment_login_account_create_agree1"
         tools:layout="@layout/fragment_login_account_create_agree1" />
     <fragment
         android:id="@+id/loginAccountCreateAgree2"
-        android:name="com.example.domain.view.home.view.login.LoginAccountCreateAgree2"
+        android:name="com.softcon.studysns.view.home.view.login.LoginAccountCreateAgree2"
         android:label="fragment_login_account_create_agree2"
         tools:layout="@layout/fragment_login_account_create_agree2" />
     <fragment
         android:id="@+id/loginAccountCreateAgree3"
-        android:name="com.example.domain.view.home.view.login.LoginAccountCreateAgree3"
+        android:name="com.softcon.studysns.view.home.view.login.LoginAccountCreateAgree3"
         android:label="fragment_login_account_create_agree3"
         tools:layout="@layout/fragment_login_account_create_agree3" />
     <fragment
         android:id="@+id/loginAccountCreateAddressWebView"
-        android:name="com.example.domain.view.home.view.login.LoginAccountCreateAddressWebView"
+        android:name="com.softcon.studysns.view.home.view.login.LoginAccountCreateAddressWebView"
         android:label="fragment_login_account_create_address_web_view"
         tools:layout="@layout/fragment_login_account_create_address_web_view" />
 

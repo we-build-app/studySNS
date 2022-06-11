@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.domain.view.home.setting">
+    package="com.softcon.studysns.view.home.setting">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,10 +15,10 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/Theme.Setting">
-        <activity android:name="com.example.domain.view.home.view.MainActivity"></activity>
-        <activity android:name="com.example.domain.view.home.view.LoginActivity">
+        <activity android:name="com.softcon.studysns.view.home.view.MainActivity"></activity>
+        <activity android:name="com.softcon.studysns.view.home.view.LoginActivity">
         </activity>
-        <activity android:name="com.example.domain.view.home.view.Intro"
+        <activity android:name="com.softcon.studysns.view.home.view.Intro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
