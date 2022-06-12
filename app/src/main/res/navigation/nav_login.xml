@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/loginFragment">
+
+    <!-- Login !-->
+    <fragment
+        android:id="@+id/loginPWFind"
+        android:name="com.softcon.studysns.view.home.login.LoginPWFindFragment"
+        android:label="fragment_login_pw_find"
+        tools:layout="@layout/fragment_login_pw_find" >
+        <action
+            android:id="@+id/action_loginPWFind_to_loginPWFindResult"
+            app:destination="@id/loginPWFindResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginIDFind"
+        android:name="com.softcon.studysns.view.home.login.LoginIDFindFragment"
+        android:label="fragment_login_id_find"
+        tools:layout="@layout/fragment_login_id_find" >
+        <action
+            android:id="@+id/action_loginIDFind_to_loginIDFindResult"
+            app:destination="@id/loginIDFindResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginAccountCreate"
+        android:name="com.softcon.studysns.view.home.login.LoginAccountCreateFragment"
+        android:label="fragment_login_account_create"
+        tools:layout="@layout/fragment_login_account_create" >
+        <action
+            android:id="@+id/action_loginAccountCreate_to_loginAccoutCreateFindAddress"
+            app:destination="@id/loginAccoutCreateFindAddress" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.softcon.studysns.view.home.login.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_loginPWFind2"
+            app:destination="@id/loginPWFind" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginIDFind2"
+            app:destination="@id/loginIDFind" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginAccountCreate2"
+            app:destination="@id/loginAccountCreate" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginIDFindResult"
+        android:name="com.softcon.studysns.view.home.login.LoginIDFindResult"
+        android:label="fragment_login_i_d_find_result"
+        tools:layout="@layout/fragment_login_id_find_result" />
+    <fragment
+        android:id="@+id/loginPWFindResult"
+        android:name="com.softcon.studysns.view.home.login.LoginPWFindResult"
+        android:label="fragment_login_p_w_find_result"
+        tools:layout="@layout/fragment_login_pw_find_result" />
+    <fragment
+        android:id="@+id/loginAccoutCreateFindAddress"
+        android:name="com.softcon.studysns.view.home.login.LoginAccoutCreateFindAddress"
+        android:label="fragment_login_accout_create_find_address"
+        tools:layout="@layout/fragment_login_accout_create_find_address" >
+        <action
+            android:id="@+id/action_loginAccoutCreateFindAddress_to_loginAccountCreateSetNickName"
+            app:destination="@id/loginAccountCreateSetNickName" />
+        <action
+            android:id="@+id/action_loginAccoutCreateFindAddress_to_loginAccountCreateAgree1"
+            app:destination="@id/loginAccountCreateAgree1" />
+        <action
+            android:id="@+id/action_loginAccoutCreateFindAddress_to_loginAccountCreateAgree2"
+            app:destination="@id/loginAccountCreateAgree2" />
+        <action
+            android:id="@+id/action_loginAccoutCreateFindAddress_to_loginAccountCreateAgree3"
+            app:destination="@id/loginAccountCreateAgree3" />
+        <action
+            android:id="@+id/action_loginAccoutCreateFindAddress_to_loginAccountCreateAddressWebView"
+            app:destination="@id/loginAccountCreateAddressWebView" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginAccountCreateSetNickName"
+        android:name="com.softcon.studysns.view.home.login.LoginAccountCreateSetNickName"
+        android:label="fragment_login_account_create_set_nick_name"
+        tools:layout="@layout/fragment_login_account_create_set_nick_name" />
+    <fragment
+        android:id="@+id/loginAccountCreateAgree1"
+        android:name="com.softcon.studysns.view.home.login.LoginAccountCreateAgree1"
+        android:label="fragment_login_account_create_agree1"
+        tools:layout="@layout/fragment_login_account_create_agree1" />
+    <fragment
+        android:id="@+id/loginAccountCreateAgree2"
+        android:name="com.softcon.studysns.view.home.login.LoginAccountCreateAgree2"
+        android:label="fragment_login_account_create_agree2"
+        tools:layout="@layout/fragment_login_account_create_agree2" />
+    <fragment
+        android:id="@+id/loginAccountCreateAgree3"
+        android:name="com.softcon.studysns.view.home.login.LoginAccountCreateAgree3"
+        android:label="fragment_login_account_create_agree3"
+        tools:layout="@layout/fragment_login_account_create_agree3" />
+    <fragment
+        android:id="@+id/loginAccountCreateAddressWebView"
+        android:name="com.softcon.studysns.view.home.login.LoginAccountCreateAddressWebView"
+        android:label="fragment_login_account_create_address_web_view"
+        tools:layout="@layout/fragment_login_account_create_address_web_view" />
+
+</navigation>
