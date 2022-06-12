@@ -22,8 +22,6 @@ public class LoginIDFindResult extends Fragment {
     private Button MoveToLoginButton;
     private TextView UserName, UserID;
 
-    public FragmentLoginIdFindResultBinding
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -39,4 +37,6 @@ public class LoginIDFindResult extends Fragment {
 
         this.MoveToLoginButton.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.loginFragment));
     }
+
+
 }
