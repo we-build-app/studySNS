@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softcon.studysns.view.home.view.login.LoginAccoutCreateFindAddress">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="거주지 입력"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/Address_inputAddress"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="주소를 입력하세요"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="클릭시 자동으로 주소 검색이 가능합니다."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:background="@drawable/address_background"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:text="거주지에 대한 내용은 오프라인 모임시 모임 추천용으로 쓰일 예정입니다. 내용은 저희만의 시스템을 이용해서 안전하게 저장되어집니다."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address_inputAddress"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@android:drawable/ic_dialog_info"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이용약관 동의"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <CheckBox
+        android:id="@+id/Address_Allagree"
+        android:layout_width="370dp"
+        android:layout_height="37dp"
+        android:button="@drawable/serviceagree"
+        android:paddingLeft="10dp"
+        android:text="전체 동의합니다."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address_Allagree"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <CheckBox
+        android:id="@+id/Address_agree1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:button="@drawable/serviceagree_small"
+        android:paddingLeft="10dp"
+        android:text="이용약관 동의(필수)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address_Allagree"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <CheckBox
+        android:id="@+id/Address_agree2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:button="@drawable/serviceagree_small"
+        android:paddingLeft="10dp"
+        android:text="개인정보 수입 이용동의(필수)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address_agree1"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <CheckBox
+        android:id="@+id/Address_agree3"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:button="@drawable/serviceagree_small"
+        android:paddingLeft="10dp"
+        android:text="SNS/이메일 정보 수신 동의(선택)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address_agree2"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <ImageView
+        android:id="@+id/Goto_agree1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/gotoagreement"
+        app:layout_constraintBottom_toBottomOf="@+id/Address_agree1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toEndOf="@+id/Address_agree1"
+        app:layout_constraintTop_toTopOf="@+id/Address_agree1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/Goto_agree2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/gotoagreement"
+        app:layout_constraintBottom_toBottomOf="@+id/Address_agree2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toEndOf="@+id/Address_agree2"
+        app:layout_constraintTop_toTopOf="@+id/Address_agree2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/Goto_agree3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/gotoagreement"
+        app:layout_constraintBottom_toBottomOf="@+id/Address_agree3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toEndOf="@+id/Address_agree3"
+        app:layout_constraintTop_toTopOf="@+id/Address_agree3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/GotoNickNameSetting"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@color/main_skyblue"
+        android:text="다음으로"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address_agree3"
+        app:layout_constraintVertical_bias="0.859" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fadein"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#6B000000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <WebView
+            android:id="@+id/AddressAPI"
+            android:layout_width="371dp"
+            android:layout_height="631dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.59" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
