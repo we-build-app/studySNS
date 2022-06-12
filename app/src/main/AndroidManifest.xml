@@ -15,10 +15,10 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/Theme.Setting">
-        <activity android:name="com.softcon.studysns.view.home.view.MainActivity"></activity>
-        <activity android:name="com.softcon.studysns.view.home.view.LoginActivity">
+        <activity android:name="com.softcon.studysns.view.home.MainActivity"></activity>
+        <activity android:name="com.softcon.studysns.view.home.LoginActivity">
         </activity>
-        <activity android:name="com.softcon.studysns.view.home.view.Intro"
+        <activity android:name="com.softcon.studysns.view.home.Intro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

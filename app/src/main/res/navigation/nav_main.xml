@@ -8,7 +8,7 @@
     <!-- Home !-->
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.softcon.studysns.view.home.view.main.HomeFragment"
+        android:name="com.softcon.studysns.view.home.main.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"
         >
@@ -29,7 +29,7 @@
     <!-- Setting !-->
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.softcon.studysns.view.home.view.setting.SettingsFragment"
+        android:name="com.softcon.studysns.view.home.setting.SettingsFragment"
         android:label="SettingsFragment"
         >
         <action
@@ -50,38 +50,38 @@
     </fragment>
     <fragment
         android:id="@+id/settingNickname"
-        android:name="com.softcon.studysns.view.home.view.setting.SettingNickname"
+        android:name="com.softcon.studysns.view.home.setting.SettingNickname"
         android:label="fragment_setting_nickname"
         tools:layout="@layout/fragment_setting_nickname" />
     <fragment
         android:id="@+id/settingRule"
-        android:name="com.softcon.studysns.view.home.view.setting.SettingRule"
+        android:name="com.softcon.studysns.view.home.setting.SettingRule"
         android:label="fragment_setting_rule"
         tools:layout="@layout/fragment_setting_rule" />
     <fragment
         android:id="@+id/settingAlarm"
-        android:name="com.softcon.studysns.view.home.view.setting.SettingAlarm"
+        android:name="com.softcon.studysns.view.home.setting.SettingAlarm"
         android:label="fragment_setting_alarm"
         tools:layout="@layout/fragment_setting_alarm" />
     <fragment
         android:id="@+id/settingPassword"
-        android:name="com.softcon.studysns.view.home.view.setting.SettingPassword"
+        android:name="com.softcon.studysns.view.home.setting.SettingPassword"
         android:label="fragment_setting_password"
         tools:layout="@layout/fragment_setting_password" />
     <fragment
         android:id="@+id/settingEmail"
-        android:name="com.softcon.studysns.view.home.view.setting.SettingEmail"
+        android:name="com.softcon.studysns.view.home.setting.SettingEmail"
         android:label="fragment_setting_email"
         tools:layout="@layout/fragment_setting_email" />
     <fragment
         android:id="@+id/settingProfileZone"
-        android:name="com.softcon.studysns.view.home.view.setting.SettingProfileZone"
+        android:name="com.softcon.studysns.view.home.setting.SettingProfileZone"
         android:label="fragment_setting_profile_zone"
         tools:layout="@layout/fragment_setting_profile_zone" />
     <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/>
     <fragment
         android:id="@+id/home_Communtiy"
-        android:name="com.softcon.studysns.view.home.view.main.HomeCommuntiy"
+        android:name="com.softcon.studysns.view.home.main.HomeCommuntiy"
         android:label="fragment_home__communtiy"
         tools:layout="@layout/fragment_home_communtiy" >
         <action
@@ -96,22 +96,22 @@
     </fragment>
     <fragment
         android:id="@+id/homeCommnutiyAllBoard"
-        android:name="com.softcon.studysns.view.home.view.main.HomeCommnutiyAllBoard"
+        android:name="com.softcon.studysns.view.home.main.HomeCommnutiyAllBoard"
         android:label="fragment_home_commnutiy_all_board"
         tools:layout="@layout/fragment_home_commnutiy_all_board" />
     <fragment
         android:id="@+id/homeCommuntiyPopularBoard"
-        android:name="com.softcon.studysns.view.home.view.main.HomeCommuntiyPopularBoard"
+        android:name="com.softcon.studysns.view.home.main.HomeCommuntiyPopularBoard"
         android:label="fragment_home_communtiy_popular_board"
         tools:layout="@layout/fragment_home_communtiy_popular_board" />
     <fragment
         android:id="@+id/homeCommunityStudyOpenings"
-        android:name="com.softcon.studysns.view.home.view.main.HomeCommunityStudyOpenings"
+        android:name="com.softcon.studysns.view.home.main.HomeCommunityStudyOpenings"
         android:label="fragment_home_community_study_openings"
         tools:layout="@layout/fragment_home_community_study_openings" />
     <fragment
         android:id="@+id/settingHomeFragment"
-        android:name="com.softcon.studysns.view.home.view.setting.SettingHomeFragment"
+        android:name="com.softcon.studysns.view.home.setting.SettingHomeFragment"
         android:label="fragment_setting_home"
         tools:layout="@layout/fragment_setting_home" />
 </navigation>
