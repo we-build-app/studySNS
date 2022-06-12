@@ -1,4 +1,4 @@
-package com.softcon.studysns.view.home.login;
+package com.softcon.studysns.view.login;
 
 import android.content.Context;
 import android.os.Bundle;
