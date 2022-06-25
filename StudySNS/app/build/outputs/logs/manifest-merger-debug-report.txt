@@ -1,0 +1,336 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/c4fb733a1e2f1e08b6cec4c0d00dedc6/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.preference:preference:1.1.1] /Users/mun-inbae/.gradle/caches/transforms-3/57ae54d1450b10a5b6d4c77777310814/transformed/preference-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/41099eb53e715e6fd088d65914bceeec/transformed/jetified-navigation-dynamic-features-fragment-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/c53f59e96d5592d138066f5f08078dd0/transformed/navigation-fragment-ktx-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/fa68c89423617a24b75c3d56e9c72b2a/transformed/navigation-fragment-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/3e9cb2c07d702060a43b3f4ee4ee5602/transformed/navigation-ui-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-compose:1.0.0-alpha07] /Users/mun-inbae/.gradle/caches/transforms-3/78ecd048760b9a97513baba98c69cde1/transformed/jetified-navigation-compose-1.0.0-alpha07/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/baecafc697c6ee8394bdce127a3249de/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/mun-inbae/.gradle/caches/transforms-3/f25edce33867b32a9dc5187e497ed820/transformed/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.activity:activity-compose:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/03ec9fdb2297526f7857ac899c175ff8/transformed/jetified-activity-compose-1.3.0-alpha01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/68b78fa209731236bf6f093e8ca9f03d/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/73ef4ba2558c4abbf41cc2b5b835e2db/transformed/jetified-ui-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/7450cdf1ac3f6b0e11d3d96e9eb383a5/transformed/appcompat-1.3.0-alpha01/AndroidManifest.xml:17:1-24:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/e6ed522b22a95d9408e1d5d73dcf75a6/transformed/jetified-circleimageview-3.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.media:media:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4ff7b89a1fb1aea3a45b1663b12515c4/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/7ffe93d28f362b26c3d6e78553756333/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/463b7469186c3f4b2f346265d95a7e42/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/c618c20ac0f0c831cf75a2869e1273aa/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/mun-inbae/.gradle/caches/transforms-3/c937dfc9b7f62a4de37b02df03362114/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/d1e669fb14e168f243d9c08824d90b41/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/6db351a43ed5c1ace70587740e405b9c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/mun-inbae/.gradle/caches/transforms-3/c2a503ad62f34f139cd5a52518e4e77a/transformed/jetified-fragment-ktx-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.0-alpha07] /Users/mun-inbae/.gradle/caches/transforms-3/b7afd0f8b4f62b7447554d29ca8c0851/transformed/fragment-1.3.0-alpha07/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/5aed98e1a7bd35d26e6b7e123a4f58e5/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/a3a08577c2293b3274c094c4109c786c/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/21b52207a6518d44b5d53bf208d72f33/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/78a8bad557395e961dcafcf79f000333/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/f48710c501a3b2cee72df88ccc4a39ca/transformed/transition-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/2b63616e6e2b8689975811fe3d3b0f06/transformed/jetified-appcompat-resources-1.3.0-alpha01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/e5eab7523fa294709cfed9955605f8ff/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/7f04697b6371bd88d7088940d0625bf3/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4cfa2ef3764f868c4ac286f96c605047/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/cbded60deb9bdab86c8b4b61fe4b5086/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/5b6592e71f4a3a4c12eb9f17f8802d4e/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-dynamic-features-runtime:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/039889c9e0be11b94fd051f687361d2e/transformed/jetified-navigation-dynamic-features-runtime-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/e5ba1b52f8d3ef5cb8d8cdcfb4212935/transformed/navigation-runtime-ktx-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/0cfc5735a34eb7c7c2431c319197f57a/transformed/navigation-runtime-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/34cb47bb22f1ab30ab6e6d4c1b0e5f05/transformed/navigation-common-ktx-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/e72b3d4ae3af9c4a495d10b22bf7b509/transformed/navigation-common-2.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-text:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/b7124d456237c4ac29d0ab449c144f78/transformed/jetified-ui-text-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.runtime:runtime-saveable:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/b4f39c164bd6c8d8e6a3a5bb10594855/transformed/jetified-runtime-saveable-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.animation:animation-core:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/19f4a376dd912ca2cb6dd58fafde8b28/transformed/jetified-animation-core-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-graphics:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/d15a4498765eb2858dbbf080e0d6fc1d/transformed/jetified-ui-graphics-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-unit:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/5d4dc713c0f85b64362a2c6f1566a02d/transformed/jetified-ui-unit-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-geometry:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/2e281fd34cf2b8e39ce7f44d78e6407f/transformed/jetified-ui-geometry-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-util:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/5afd1278fd0472d75716084691ff7fb4/transformed/jetified-ui-util-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.runtime:runtime:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/2c216c7e3b355ee9f1ff4588cecd564a/transformed/jetified-runtime-1.0.0-alpha12/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/5af30f77cfdcb94eb82205b4cbc7d5ba/transformed/jetified-activity-ktx-1.3.0-alpha01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/6724cbb01faa29bf9d4e877788b3fcd7/transformed/jetified-core-ktx-1.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/86e6fb22506a00aaa72150c128b0feeb/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/a530938d3931c8ee14fb15b5554142bd/transformed/jetified-activity-1.3.0-alpha01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.5.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/feb14d485bd393b18999506891b50ab1/transformed/core-1.5.0-alpha01/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/bd4596c4e03a42881733f45db8a548c5/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/631c254547bfc5df4d5287473bf942d8/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/e75a0458eb72599836852de240cf4303/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/9f24011717b021bac9ee09874fd0df37/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/6abfac59d263b6c8870828beb848f440/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/b3b09621cca747e5e8d01c73cf2136e9/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/7c252b02bae32657e4b29db3d4527dd3/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/393fbe7a1e0ede917379505e8d9bba45/transformed/jetified-lifecycle-runtime-ktx-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/13d7bb88eced37b76062be7af034cb15/transformed/jetified-lifecycle-viewmodel-ktx-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/0f3bafa533a065342f166b56561d8851/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/abce3c3b83a771c09232c4520a70d956/transformed/lifecycle-viewmodel-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/5862bd40d0d05a5019b980ab3d49ae6f/transformed/lifecycle-runtime-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/a8405ab61e6a993b412890a61cbf4ea0/transformed/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/86df5c814b5f9eca8e36b9cbe56610e1/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/d0bb36838486cba0a66bfa2c226b0163/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4814206f9931bb2b51fe2820b122a3b6/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/mun-inbae/.gradle/caches/transforms-3/7c12c30325b7ba08e4850e017532db53/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/401f37281304379c154e38a3a2c3d997/transformed/lifecycle-livedata-core-2.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/43849a663b47b5e3a36a05a548a0e4d6/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/2e9fb0efe392e058045f5a12fe5867c7/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.google.android.material:material:1.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/baecafc697c6ee8394bdce127a3249de/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/baecafc697c6ee8394bdce127a3249de/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/mun-inbae/.gradle/caches/transforms-3/f25edce33867b32a9dc5187e497ed820/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/mun-inbae/.gradle/caches/transforms-3/f25edce33867b32a9dc5187e497ed820/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/e6ed522b22a95d9408e1d5d73dcf75a6/transformed/jetified-circleimageview-3.0.0/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/e6ed522b22a95d9408e1d5d73dcf75a6/transformed/jetified-circleimageview-3.0.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.5.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/feb14d485bd393b18999506891b50ab1/transformed/core-1.5.0-alpha01/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/feb14d485bd393b18999506891b50ab1/transformed/core-1.5.0-alpha01/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/7c252b02bae32657e4b29db3d4527dd3/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/7c252b02bae32657e4b29db3d4527dd3/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:10:3-17:17
+MERGED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:10:3-17:17
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/feb14d485bd393b18999506891b50ab1/transformed/core-1.5.0-alpha01/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:11:9-45
+activity#com.example.domain.view.MainActivity
+ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:12:19-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/c4fb733a1e2f1e08b6cec4c0d00dedc6/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/c4fb733a1e2f1e08b6cec4c0d00dedc6/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.preference:preference:1.1.1] /Users/mun-inbae/.gradle/caches/transforms-3/57ae54d1450b10a5b6d4c77777310814/transformed/preference-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.1] /Users/mun-inbae/.gradle/caches/transforms-3/57ae54d1450b10a5b6d4c77777310814/transformed/preference-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/41099eb53e715e6fd088d65914bceeec/transformed/jetified-navigation-dynamic-features-fragment-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/41099eb53e715e6fd088d65914bceeec/transformed/jetified-navigation-dynamic-features-fragment-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/c53f59e96d5592d138066f5f08078dd0/transformed/navigation-fragment-ktx-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/c53f59e96d5592d138066f5f08078dd0/transformed/navigation-fragment-ktx-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/fa68c89423617a24b75c3d56e9c72b2a/transformed/navigation-fragment-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/fa68c89423617a24b75c3d56e9c72b2a/transformed/navigation-fragment-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/3e9cb2c07d702060a43b3f4ee4ee5602/transformed/navigation-ui-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/3e9cb2c07d702060a43b3f4ee4ee5602/transformed/navigation-ui-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:1.0.0-alpha07] /Users/mun-inbae/.gradle/caches/transforms-3/78ecd048760b9a97513baba98c69cde1/transformed/jetified-navigation-compose-1.0.0-alpha07/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:1.0.0-alpha07] /Users/mun-inbae/.gradle/caches/transforms-3/78ecd048760b9a97513baba98c69cde1/transformed/jetified-navigation-compose-1.0.0-alpha07/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/baecafc697c6ee8394bdce127a3249de/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/baecafc697c6ee8394bdce127a3249de/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/mun-inbae/.gradle/caches/transforms-3/f25edce33867b32a9dc5187e497ed820/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/mun-inbae/.gradle/caches/transforms-3/f25edce33867b32a9dc5187e497ed820/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.activity:activity-compose:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/03ec9fdb2297526f7857ac899c175ff8/transformed/jetified-activity-compose-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-compose:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/03ec9fdb2297526f7857ac899c175ff8/transformed/jetified-activity-compose-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/68b78fa209731236bf6f093e8ca9f03d/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/68b78fa209731236bf6f093e8ca9f03d/transformed/jetified-lifecycle-viewmodel-compose-1.0.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/73ef4ba2558c4abbf41cc2b5b835e2db/transformed/jetified-ui-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/73ef4ba2558c4abbf41cc2b5b835e2db/transformed/jetified-ui-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/7450cdf1ac3f6b0e11d3d96e9eb383a5/transformed/appcompat-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/7450cdf1ac3f6b0e11d3d96e9eb383a5/transformed/appcompat-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/e6ed522b22a95d9408e1d5d73dcf75a6/transformed/jetified-circleimageview-3.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/e6ed522b22a95d9408e1d5d73dcf75a6/transformed/jetified-circleimageview-3.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.media:media:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4ff7b89a1fb1aea3a45b1663b12515c4/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4ff7b89a1fb1aea3a45b1663b12515c4/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/7ffe93d28f362b26c3d6e78553756333/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/7ffe93d28f362b26c3d6e78553756333/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/463b7469186c3f4b2f346265d95a7e42/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/463b7469186c3f4b2f346265d95a7e42/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/c618c20ac0f0c831cf75a2869e1273aa/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/c618c20ac0f0c831cf75a2869e1273aa/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/mun-inbae/.gradle/caches/transforms-3/c937dfc9b7f62a4de37b02df03362114/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/mun-inbae/.gradle/caches/transforms-3/c937dfc9b7f62a4de37b02df03362114/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/d1e669fb14e168f243d9c08824d90b41/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/d1e669fb14e168f243d9c08824d90b41/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/6db351a43ed5c1ace70587740e405b9c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/6db351a43ed5c1ace70587740e405b9c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/mun-inbae/.gradle/caches/transforms-3/c2a503ad62f34f139cd5a52518e4e77a/transformed/jetified-fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.4] /Users/mun-inbae/.gradle/caches/transforms-3/c2a503ad62f34f139cd5a52518e4e77a/transformed/jetified-fragment-ktx-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.0-alpha07] /Users/mun-inbae/.gradle/caches/transforms-3/b7afd0f8b4f62b7447554d29ca8c0851/transformed/fragment-1.3.0-alpha07/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.0-alpha07] /Users/mun-inbae/.gradle/caches/transforms-3/b7afd0f8b4f62b7447554d29ca8c0851/transformed/fragment-1.3.0-alpha07/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/5aed98e1a7bd35d26e6b7e123a4f58e5/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/5aed98e1a7bd35d26e6b7e123a4f58e5/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/a3a08577c2293b3274c094c4109c786c/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/a3a08577c2293b3274c094c4109c786c/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/21b52207a6518d44b5d53bf208d72f33/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/21b52207a6518d44b5d53bf208d72f33/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/78a8bad557395e961dcafcf79f000333/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/78a8bad557395e961dcafcf79f000333/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/f48710c501a3b2cee72df88ccc4a39ca/transformed/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/f48710c501a3b2cee72df88ccc4a39ca/transformed/transition-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/2b63616e6e2b8689975811fe3d3b0f06/transformed/jetified-appcompat-resources-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/2b63616e6e2b8689975811fe3d3b0f06/transformed/jetified-appcompat-resources-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/e5eab7523fa294709cfed9955605f8ff/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/e5eab7523fa294709cfed9955605f8ff/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/7f04697b6371bd88d7088940d0625bf3/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/7f04697b6371bd88d7088940d0625bf3/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4cfa2ef3764f868c4ac286f96c605047/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4cfa2ef3764f868c4ac286f96c605047/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/cbded60deb9bdab86c8b4b61fe4b5086/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/cbded60deb9bdab86c8b4b61fe4b5086/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/5b6592e71f4a3a4c12eb9f17f8802d4e/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/5b6592e71f4a3a4c12eb9f17f8802d4e/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-dynamic-features-runtime:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/039889c9e0be11b94fd051f687361d2e/transformed/jetified-navigation-dynamic-features-runtime-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-dynamic-features-runtime:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/039889c9e0be11b94fd051f687361d2e/transformed/jetified-navigation-dynamic-features-runtime-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/e5ba1b52f8d3ef5cb8d8cdcfb4212935/transformed/navigation-runtime-ktx-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/e5ba1b52f8d3ef5cb8d8cdcfb4212935/transformed/navigation-runtime-ktx-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/0cfc5735a34eb7c7c2431c319197f57a/transformed/navigation-runtime-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/0cfc5735a34eb7c7c2431c319197f57a/transformed/navigation-runtime-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/34cb47bb22f1ab30ab6e6d4c1b0e5f05/transformed/navigation-common-ktx-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/34cb47bb22f1ab30ab6e6d4c1b0e5f05/transformed/navigation-common-ktx-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/e72b3d4ae3af9c4a495d10b22bf7b509/transformed/navigation-common-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.3] /Users/mun-inbae/.gradle/caches/transforms-3/e72b3d4ae3af9c4a495d10b22bf7b509/transformed/navigation-common-2.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-text:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/b7124d456237c4ac29d0ab449c144f78/transformed/jetified-ui-text-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-text:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/b7124d456237c4ac29d0ab449c144f78/transformed/jetified-ui-text-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime-saveable:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/b4f39c164bd6c8d8e6a3a5bb10594855/transformed/jetified-runtime-saveable-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime-saveable:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/b4f39c164bd6c8d8e6a3a5bb10594855/transformed/jetified-runtime-saveable-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/19f4a376dd912ca2cb6dd58fafde8b28/transformed/jetified-animation-core-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/19f4a376dd912ca2cb6dd58fafde8b28/transformed/jetified-animation-core-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/d15a4498765eb2858dbbf080e0d6fc1d/transformed/jetified-ui-graphics-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/d15a4498765eb2858dbbf080e0d6fc1d/transformed/jetified-ui-graphics-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-unit:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/5d4dc713c0f85b64362a2c6f1566a02d/transformed/jetified-ui-unit-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-unit:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/5d4dc713c0f85b64362a2c6f1566a02d/transformed/jetified-ui-unit-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-geometry:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/2e281fd34cf2b8e39ce7f44d78e6407f/transformed/jetified-ui-geometry-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-geometry:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/2e281fd34cf2b8e39ce7f44d78e6407f/transformed/jetified-ui-geometry-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-util:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/5afd1278fd0472d75716084691ff7fb4/transformed/jetified-ui-util-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-util:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/5afd1278fd0472d75716084691ff7fb4/transformed/jetified-ui-util-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/2c216c7e3b355ee9f1ff4588cecd564a/transformed/jetified-runtime-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime:1.0.0-alpha12] /Users/mun-inbae/.gradle/caches/transforms-3/2c216c7e3b355ee9f1ff4588cecd564a/transformed/jetified-runtime-1.0.0-alpha12/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/5af30f77cfdcb94eb82205b4cbc7d5ba/transformed/jetified-activity-ktx-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/5af30f77cfdcb94eb82205b4cbc7d5ba/transformed/jetified-activity-ktx-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/6724cbb01faa29bf9d4e877788b3fcd7/transformed/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/6724cbb01faa29bf9d4e877788b3fcd7/transformed/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/86e6fb22506a00aaa72150c128b0feeb/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/86e6fb22506a00aaa72150c128b0feeb/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/a530938d3931c8ee14fb15b5554142bd/transformed/jetified-activity-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.3.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/a530938d3931c8ee14fb15b5554142bd/transformed/jetified-activity-1.3.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/feb14d485bd393b18999506891b50ab1/transformed/core-1.5.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0-alpha01] /Users/mun-inbae/.gradle/caches/transforms-3/feb14d485bd393b18999506891b50ab1/transformed/core-1.5.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/bd4596c4e03a42881733f45db8a548c5/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/bd4596c4e03a42881733f45db8a548c5/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/631c254547bfc5df4d5287473bf942d8/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/631c254547bfc5df4d5287473bf942d8/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/e75a0458eb72599836852de240cf4303/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/e75a0458eb72599836852de240cf4303/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/9f24011717b021bac9ee09874fd0df37/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/9f24011717b021bac9ee09874fd0df37/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/6abfac59d263b6c8870828beb848f440/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/6abfac59d263b6c8870828beb848f440/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/b3b09621cca747e5e8d01c73cf2136e9/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/b3b09621cca747e5e8d01c73cf2136e9/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/7c252b02bae32657e4b29db3d4527dd3/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/7c252b02bae32657e4b29db3d4527dd3/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/393fbe7a1e0ede917379505e8d9bba45/transformed/jetified-lifecycle-runtime-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/393fbe7a1e0ede917379505e8d9bba45/transformed/jetified-lifecycle-runtime-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/13d7bb88eced37b76062be7af034cb15/transformed/jetified-lifecycle-viewmodel-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/13d7bb88eced37b76062be7af034cb15/transformed/jetified-lifecycle-viewmodel-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/0f3bafa533a065342f166b56561d8851/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/0f3bafa533a065342f166b56561d8851/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/abce3c3b83a771c09232c4520a70d956/transformed/lifecycle-viewmodel-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/abce3c3b83a771c09232c4520a70d956/transformed/lifecycle-viewmodel-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/5862bd40d0d05a5019b980ab3d49ae6f/transformed/lifecycle-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/5862bd40d0d05a5019b980ab3d49ae6f/transformed/lifecycle-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/a8405ab61e6a993b412890a61cbf4ea0/transformed/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/a8405ab61e6a993b412890a61cbf4ea0/transformed/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/86df5c814b5f9eca8e36b9cbe56610e1/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/86df5c814b5f9eca8e36b9cbe56610e1/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/d0bb36838486cba0a66bfa2c226b0163/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/d0bb36838486cba0a66bfa2c226b0163/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4814206f9931bb2b51fe2820b122a3b6/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/4814206f9931bb2b51fe2820b122a3b6/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/mun-inbae/.gradle/caches/transforms-3/7c12c30325b7ba08e4850e017532db53/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/mun-inbae/.gradle/caches/transforms-3/7c12c30325b7ba08e4850e017532db53/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/401f37281304379c154e38a3a2c3d997/transformed/lifecycle-livedata-core-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] /Users/mun-inbae/.gradle/caches/transforms-3/401f37281304379c154e38a3a2c3d997/transformed/lifecycle-livedata-core-2.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/43849a663b47b5e3a36a05a548a0e4d6/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mun-inbae/.gradle/caches/transforms-3/43849a663b47b5e3a36a05a548a0e4d6/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/2e9fb0efe392e058045f5a12fe5867c7/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/mun-inbae/.gradle/caches/transforms-3/2e9fb0efe392e058045f5a12fe5867c7/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:4:3-70
+MERGED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:4:3-70
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:8:3-74
+	android:name
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:8:20-72
+activity#com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity
+ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:12:5-271
+	android:process
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:12:152-203
+	android:enabled
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:12:103-126
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:12:240-269
+	android:launchMode
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:12:204-239
+	android:exported
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:12:127-151
+	android:name
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:12:15-102
+activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:13:5-226
+	android:enabled
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:13:96-119
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:13:145-174
+	android:exported
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:13:120-144
+	android:theme
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:13:175-224
+	android:name
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:13:15-95
+service#com.google.android.play.core.assetpacks.AssetPackExtractionService
+ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:16:5-145
+	android:enabled
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:16:96-119
+	android:exported
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:16:120-143
+	android:name
+		ADDED from [com.google.android.play:core:1.7.2] /Users/mun-inbae/.gradle/caches/transforms-3/4d24dba3860f73d21797c93ba3e8c8dd/transformed/jetified-core-1.7.2/AndroidManifest.xml:16:14-95

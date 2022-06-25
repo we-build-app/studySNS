@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/menu_bottom_navigation_menu.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_login_home.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_login_home.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_round_corner2.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/round_corner2.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_ic_baseline_menu_24.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/ic_baseline_menu_24.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_ic_outline_settings_24.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/ic_outline_settings_24.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_password.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/password.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_id.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/id.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_login_id_find.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_login_id_find.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_ic_baseline_home_24.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_ic_baseline_calendar_today_24.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_setting_email.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_setting_email.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_login.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/login.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_login_pw_find.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_login_pw_find.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_round_corner.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/round_corner.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_a1.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/a1.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_line.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/line.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_ic_outline_calendar_month_24.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/ic_outline_calendar_month_24.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_home.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_setting_nickname.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_setting_nickname.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_setting_profile_zone.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_setting_profile_zone.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_ic_outline_home_24.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/ic_outline_home_24.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/navigation_navigation.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/navigation/navigation.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_login_account_create.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_login_account_create.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_instagram.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/instagram.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable_ic_outline_people_alt_24.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable/ic_outline_people_alt_24.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/xml_fragment_setting_home.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/xml/fragment_setting_home.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_setting_rule.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_setting_rule.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_kakao.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/kakao.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_setting_alarm.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_setting_alarm.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/layout_fragment_setting_password.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/layout/fragment_setting_password.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_xml_border.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/xml_border.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/menu_menu_option.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/menu/menu_option.xml"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_facebook.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/facebook.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_user.9.png.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/user.9.png"
+    },
+    {
+        "merged": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/build/intermediates/merged_res/debug/drawable-v24_roundtextbox.xml.flat",
+        "source": "/Users/mun-inbae/Documents/GitHub/Build/studySNS/StudySNS/app/src/main/res/drawable-v24/roundtextbox.xml"
+    }
+]
